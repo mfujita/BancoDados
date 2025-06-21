@@ -50,16 +50,24 @@ namespace AulaBancoDeDados
             }
         }
 
-        public DataTable Buscar(string name)
+        public DataTable Buscar(string name, string endereco, string bairro, string cidade, string telefone, String sexo, string nascimento)
         {
-            string sql = "SELECT * FROM bd1 where nome like '%" + name + "%';";
-            //" and endereco like "++" and bairro like '%%' and cidade like '%%' and cidade like '%%' and telefone like '%%' and sexo like '%%' and nascimento like '%%';";
-            var dt = new DataTable();
+            
             try
             {
+                string sql = "SELECT * FROM bd1 where nome like '%" + name + "%'";
+                sql += "and endereco like '%" + endereco + "%'";
+                sql += "and bairro like '%" + bairro + "%'";
+                sql += "and cidade like '%" + cidade + "%'";
+                sql += "and telefone like '%" + telefone + "%'";
+                sql += "and sexo like '%" + sexo + "%'";
+                sql += "and nascimento like '%" + nascimento + "%'";
+
+                var dt = new DataTable();
                 MySqlConnection conn = new MySqlConnection(stringConnection);
                 conn.Open();
                 MySqlCommand command = new MySqlCommand(sql, conn);
+
                 MySqlDataReader reader = command.ExecuteReader();
                 //while (reader.Read())
                 //{

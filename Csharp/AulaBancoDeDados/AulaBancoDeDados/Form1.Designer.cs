@@ -61,6 +61,7 @@
             this.tpCadastrar = new System.Windows.Forms.TabPage();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.tpBuscar = new System.Windows.Forms.TabPage();
+            this.dgv = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.cbBuscarSexo = new System.Windows.Forms.ComboBox();
             this.gbBuscarFumante = new System.Windows.Forms.GroupBox();
@@ -80,17 +81,6 @@
             this.lblBuscarNome = new System.Windows.Forms.Label();
             this.tpAtualizar = new System.Windows.Forms.TabPage();
             this.tpDeletar = new System.Windows.Forms.TabPage();
-            this.dgv = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bairro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fumante = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.propriedades = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbDadosPessoais.SuspendLayout();
             this.gbOutrasInformacoes.SuspendLayout();
             this.gbPertences.SuspendLayout();
@@ -98,8 +88,8 @@
             this.tab.SuspendLayout();
             this.tpCadastrar.SuspendLayout();
             this.tpBuscar.SuspendLayout();
-            this.gbBuscarFumante.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
+            this.gbBuscarFumante.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNomeCompleto
@@ -107,7 +97,7 @@
             this.lblNomeCompleto.AutoSize = true;
             this.lblNomeCompleto.Location = new System.Drawing.Point(6, 36);
             this.lblNomeCompleto.Name = "lblNomeCompleto";
-            this.lblNomeCompleto.Size = new System.Drawing.Size(161, 25);
+            this.lblNomeCompleto.Size = new System.Drawing.Size(176, 28);
             this.lblNomeCompleto.TabIndex = 0;
             this.lblNomeCompleto.Text = "Nome completo";
             // 
@@ -140,7 +130,7 @@
             this.mtbDataNascimento.Location = new System.Drawing.Point(718, 145);
             this.mtbDataNascimento.Mask = "00/00/0000";
             this.mtbDataNascimento.Name = "mtbDataNascimento";
-            this.mtbDataNascimento.Size = new System.Drawing.Size(142, 30);
+            this.mtbDataNascimento.Size = new System.Drawing.Size(142, 33);
             this.mtbDataNascimento.TabIndex = 6;
             // 
             // lblDataNascimento
@@ -148,7 +138,7 @@
             this.lblDataNascimento.AutoSize = true;
             this.lblDataNascimento.Location = new System.Drawing.Point(515, 150);
             this.lblDataNascimento.Name = "lblDataNascimento";
-            this.lblDataNascimento.Size = new System.Drawing.Size(197, 25);
+            this.lblDataNascimento.Size = new System.Drawing.Size(215, 28);
             this.lblDataNascimento.TabIndex = 13;
             this.lblDataNascimento.Text = "Data de nascimento";
             // 
@@ -157,7 +147,7 @@
             this.mtbTelefone.Location = new System.Drawing.Point(168, 146);
             this.mtbTelefone.Mask = "(00) 00000 0000";
             this.mtbTelefone.Name = "mtbTelefone";
-            this.mtbTelefone.Size = new System.Drawing.Size(150, 30);
+            this.mtbTelefone.Size = new System.Drawing.Size(150, 33);
             this.mtbTelefone.TabIndex = 4;
             // 
             // cbSexo
@@ -168,7 +158,7 @@
             "Feminino"});
             this.cbSexo.Location = new System.Drawing.Point(386, 146);
             this.cbSexo.Name = "cbSexo";
-            this.cbSexo.Size = new System.Drawing.Size(121, 32);
+            this.cbSexo.Size = new System.Drawing.Size(121, 35);
             this.cbSexo.TabIndex = 5;
             // 
             // lblSexo
@@ -176,7 +166,7 @@
             this.lblSexo.AutoSize = true;
             this.lblSexo.Location = new System.Drawing.Point(324, 148);
             this.lblSexo.Name = "lblSexo";
-            this.lblSexo.Size = new System.Drawing.Size(56, 25);
+            this.lblSexo.Size = new System.Drawing.Size(60, 28);
             this.lblSexo.TabIndex = 10;
             this.lblSexo.Text = "Sexo";
             // 
@@ -185,7 +175,7 @@
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.Location = new System.Drawing.Point(70, 146);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(92, 25);
+            this.lblTelefone.Size = new System.Drawing.Size(99, 28);
             this.lblTelefone.TabIndex = 8;
             this.lblTelefone.Text = "Telefone";
             // 
@@ -193,7 +183,7 @@
             // 
             this.txtCidade.Location = new System.Drawing.Point(588, 107);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(272, 30);
+            this.txtCidade.Size = new System.Drawing.Size(272, 33);
             this.txtCidade.TabIndex = 3;
             // 
             // lblCidade
@@ -201,7 +191,7 @@
             this.lblCidade.AutoSize = true;
             this.lblCidade.Location = new System.Drawing.Point(513, 110);
             this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(76, 25);
+            this.lblCidade.Size = new System.Drawing.Size(82, 28);
             this.lblCidade.TabIndex = 6;
             this.lblCidade.Text = "Cidade";
             // 
@@ -209,7 +199,7 @@
             // 
             this.txtBairro.Location = new System.Drawing.Point(168, 110);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(339, 30);
+            this.txtBairro.Size = new System.Drawing.Size(339, 33);
             this.txtBairro.TabIndex = 2;
             // 
             // lblBairro
@@ -217,7 +207,7 @@
             this.lblBairro.AutoSize = true;
             this.lblBairro.Location = new System.Drawing.Point(101, 110);
             this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(66, 25);
+            this.lblBairro.Size = new System.Drawing.Size(72, 28);
             this.lblBairro.TabIndex = 4;
             this.lblBairro.Text = "Bairro";
             // 
@@ -225,7 +215,7 @@
             // 
             this.txtEndereco.Location = new System.Drawing.Point(168, 73);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(692, 30);
+            this.txtEndereco.Size = new System.Drawing.Size(692, 33);
             this.txtEndereco.TabIndex = 1;
             // 
             // lblEndereco
@@ -233,7 +223,7 @@
             this.lblEndereco.AutoSize = true;
             this.lblEndereco.Location = new System.Drawing.Point(70, 76);
             this.lblEndereco.Name = "lblEndereco";
-            this.lblEndereco.Size = new System.Drawing.Size(97, 25);
+            this.lblEndereco.Size = new System.Drawing.Size(106, 28);
             this.lblEndereco.TabIndex = 2;
             this.lblEndereco.Text = "Endereço";
             // 
@@ -241,7 +231,7 @@
             // 
             this.txtNome.Location = new System.Drawing.Point(168, 33);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(693, 30);
+            this.txtNome.Size = new System.Drawing.Size(693, 33);
             this.txtNome.TabIndex = 0;
             // 
             // gbOutrasInformacoes
@@ -281,7 +271,7 @@
             this.cbItensTablet.AutoSize = true;
             this.cbItensTablet.Location = new System.Drawing.Point(396, 98);
             this.cbItensTablet.Name = "cbItensTablet";
-            this.cbItensTablet.Size = new System.Drawing.Size(88, 29);
+            this.cbItensTablet.Size = new System.Drawing.Size(97, 32);
             this.cbItensTablet.TabIndex = 8;
             this.cbItensTablet.Text = "Tablet";
             this.cbItensTablet.UseVisualStyleBackColor = true;
@@ -291,7 +281,7 @@
             this.cbItensCelular.AutoSize = true;
             this.cbItensCelular.Location = new System.Drawing.Point(396, 63);
             this.cbItensCelular.Name = "cbItensCelular";
-            this.cbItensCelular.Size = new System.Drawing.Size(95, 29);
+            this.cbItensCelular.Size = new System.Drawing.Size(105, 32);
             this.cbItensCelular.TabIndex = 7;
             this.cbItensCelular.Text = "Celular";
             this.cbItensCelular.UseVisualStyleBackColor = true;
@@ -301,7 +291,7 @@
             this.cbItensInternet.AutoSize = true;
             this.cbItensInternet.Location = new System.Drawing.Point(10, 98);
             this.cbItensInternet.Name = "cbItensInternet";
-            this.cbItensInternet.Size = new System.Drawing.Size(104, 29);
+            this.cbItensInternet.Size = new System.Drawing.Size(114, 32);
             this.cbItensInternet.TabIndex = 2;
             this.cbItensInternet.Text = "Internet";
             this.cbItensInternet.UseVisualStyleBackColor = true;
@@ -311,7 +301,7 @@
             this.cbItensNotebook.AutoSize = true;
             this.cbItensNotebook.Location = new System.Drawing.Point(396, 26);
             this.cbItensNotebook.Name = "cbItensNotebook";
-            this.cbItensNotebook.Size = new System.Drawing.Size(122, 29);
+            this.cbItensNotebook.Size = new System.Drawing.Size(134, 32);
             this.cbItensNotebook.TabIndex = 6;
             this.cbItensNotebook.Text = "Notebook";
             this.cbItensNotebook.UseVisualStyleBackColor = true;
@@ -321,7 +311,7 @@
             this.cbItensComputadorDesktop.AutoSize = true;
             this.cbItensComputadorDesktop.Location = new System.Drawing.Point(149, 98);
             this.cbItensComputadorDesktop.Name = "cbItensComputadorDesktop";
-            this.cbItensComputadorDesktop.Size = new System.Drawing.Size(226, 29);
+            this.cbItensComputadorDesktop.Size = new System.Drawing.Size(247, 32);
             this.cbItensComputadorDesktop.TabIndex = 5;
             this.cbItensComputadorDesktop.Text = "Computador desktop";
             this.cbItensComputadorDesktop.UseVisualStyleBackColor = true;
@@ -331,7 +321,7 @@
             this.cbItensServicoStreaming.AutoSize = true;
             this.cbItensServicoStreaming.Location = new System.Drawing.Point(149, 63);
             this.cbItensServicoStreaming.Name = "cbItensServicoStreaming";
-            this.cbItensServicoStreaming.Size = new System.Drawing.Size(224, 29);
+            this.cbItensServicoStreaming.Size = new System.Drawing.Size(246, 32);
             this.cbItensServicoStreaming.TabIndex = 4;
             this.cbItensServicoStreaming.Text = "Serviço de streaming";
             this.cbItensServicoStreaming.UseVisualStyleBackColor = true;
@@ -341,7 +331,7 @@
             this.cbItensTvAssinatura.AutoSize = true;
             this.cbItensTvAssinatura.Location = new System.Drawing.Point(149, 29);
             this.cbItensTvAssinatura.Name = "cbItensTvAssinatura";
-            this.cbItensTvAssinatura.Size = new System.Drawing.Size(192, 29);
+            this.cbItensTvAssinatura.Size = new System.Drawing.Size(210, 32);
             this.cbItensTvAssinatura.TabIndex = 3;
             this.cbItensTvAssinatura.Text = "TV por assinatura";
             this.cbItensTvAssinatura.UseVisualStyleBackColor = true;
@@ -351,7 +341,7 @@
             this.cbItensGeladeira.AutoSize = true;
             this.cbItensGeladeira.Location = new System.Drawing.Point(10, 62);
             this.cbItensGeladeira.Name = "cbItensGeladeira";
-            this.cbItensGeladeira.Size = new System.Drawing.Size(118, 29);
+            this.cbItensGeladeira.Size = new System.Drawing.Size(131, 32);
             this.cbItensGeladeira.TabIndex = 1;
             this.cbItensGeladeira.Text = "Geladeira";
             this.cbItensGeladeira.UseVisualStyleBackColor = true;
@@ -361,7 +351,7 @@
             this.cbItensVeiculo.AutoSize = true;
             this.cbItensVeiculo.Location = new System.Drawing.Point(10, 29);
             this.cbItensVeiculo.Name = "cbItensVeiculo";
-            this.cbItensVeiculo.Size = new System.Drawing.Size(99, 29);
+            this.cbItensVeiculo.Size = new System.Drawing.Size(109, 32);
             this.cbItensVeiculo.TabIndex = 0;
             this.cbItensVeiculo.Text = "Veículo";
             this.cbItensVeiculo.UseVisualStyleBackColor = true;
@@ -383,7 +373,7 @@
             this.rbFumanteSim.AutoSize = true;
             this.rbFumanteSim.Location = new System.Drawing.Point(18, 90);
             this.rbFumanteSim.Name = "rbFumanteSim";
-            this.rbFumanteSim.Size = new System.Drawing.Size(64, 29);
+            this.rbFumanteSim.Size = new System.Drawing.Size(71, 32);
             this.rbFumanteSim.TabIndex = 1;
             this.rbFumanteSim.TabStop = true;
             this.rbFumanteSim.Text = "Sim";
@@ -394,7 +384,7 @@
             this.rbFumanteNao.AutoSize = true;
             this.rbFumanteNao.Location = new System.Drawing.Point(16, 51);
             this.rbFumanteNao.Name = "rbFumanteNao";
-            this.rbFumanteNao.Size = new System.Drawing.Size(68, 29);
+            this.rbFumanteNao.Size = new System.Drawing.Size(75, 32);
             this.rbFumanteNao.TabIndex = 0;
             this.rbFumanteNao.TabStop = true;
             this.rbFumanteNao.Text = "Não";
@@ -420,10 +410,10 @@
             this.tpCadastrar.Controls.Add(this.btnEnviar);
             this.tpCadastrar.Controls.Add(this.gbDadosPessoais);
             this.tpCadastrar.Controls.Add(this.gbOutrasInformacoes);
-            this.tpCadastrar.Location = new System.Drawing.Point(4, 33);
+            this.tpCadastrar.Location = new System.Drawing.Point(4, 36);
             this.tpCadastrar.Name = "tpCadastrar";
             this.tpCadastrar.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCadastrar.Size = new System.Drawing.Size(985, 391);
+            this.tpCadastrar.Size = new System.Drawing.Size(985, 388);
             this.tpCadastrar.TabIndex = 0;
             this.tpCadastrar.Text = "Cadastrar";
             this.tpCadastrar.UseVisualStyleBackColor = true;
@@ -456,12 +446,21 @@
             this.tpBuscar.Controls.Add(this.txtBuscarEndereco);
             this.tpBuscar.Controls.Add(this.txtBuscarNome);
             this.tpBuscar.Controls.Add(this.lblBuscarNome);
-            this.tpBuscar.Location = new System.Drawing.Point(4, 33);
+            this.tpBuscar.Location = new System.Drawing.Point(4, 36);
             this.tpBuscar.Name = "tpBuscar";
-            this.tpBuscar.Size = new System.Drawing.Size(985, 391);
+            this.tpBuscar.Size = new System.Drawing.Size(985, 388);
             this.tpBuscar.TabIndex = 3;
             this.tpBuscar.Text = "Buscar";
             this.tpBuscar.UseVisualStyleBackColor = true;
+            // 
+            // dgv
+            // 
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Location = new System.Drawing.Point(14, 129);
+            this.dgv.Name = "dgv";
+            this.dgv.RowHeadersWidth = 45;
+            this.dgv.Size = new System.Drawing.Size(950, 150);
+            this.dgv.TabIndex = 16;
             // 
             // btnBuscar
             // 
@@ -481,7 +480,7 @@
             "F"});
             this.cbBuscarSexo.Location = new System.Drawing.Point(559, 46);
             this.cbBuscarSexo.Name = "cbBuscarSexo";
-            this.cbBuscarSexo.Size = new System.Drawing.Size(121, 32);
+            this.cbBuscarSexo.Size = new System.Drawing.Size(121, 35);
             this.cbBuscarSexo.TabIndex = 13;
             // 
             // gbBuscarFumante
@@ -500,7 +499,7 @@
             this.rbBuscarFumanteNao.AutoSize = true;
             this.rbBuscarFumanteNao.Location = new System.Drawing.Point(118, 25);
             this.rbBuscarFumanteNao.Name = "rbBuscarFumanteNao";
-            this.rbBuscarFumanteNao.Size = new System.Drawing.Size(68, 29);
+            this.rbBuscarFumanteNao.Size = new System.Drawing.Size(75, 32);
             this.rbBuscarFumanteNao.TabIndex = 1;
             this.rbBuscarFumanteNao.TabStop = true;
             this.rbBuscarFumanteNao.Text = "Não";
@@ -511,7 +510,7 @@
             this.rbBuscarFumanteSim.AutoSize = true;
             this.rbBuscarFumanteSim.Location = new System.Drawing.Point(12, 25);
             this.rbBuscarFumanteSim.Name = "rbBuscarFumanteSim";
-            this.rbBuscarFumanteSim.Size = new System.Drawing.Size(64, 29);
+            this.rbBuscarFumanteSim.Size = new System.Drawing.Size(71, 32);
             this.rbBuscarFumanteSim.TabIndex = 0;
             this.rbBuscarFumanteSim.TabStop = true;
             this.rbBuscarFumanteSim.Text = "Sim";
@@ -522,7 +521,7 @@
             this.mtbBuscarNascimento.Location = new System.Drawing.Point(486, 87);
             this.mtbBuscarNascimento.Mask = "(00) 00000 0000";
             this.mtbBuscarNascimento.Name = "mtbBuscarNascimento";
-            this.mtbBuscarNascimento.Size = new System.Drawing.Size(194, 30);
+            this.mtbBuscarNascimento.Size = new System.Drawing.Size(194, 33);
             this.mtbBuscarNascimento.TabIndex = 11;
             // 
             // lblBuscarNascimento
@@ -530,7 +529,7 @@
             this.lblBuscarNascimento.AutoSize = true;
             this.lblBuscarNascimento.Location = new System.Drawing.Point(312, 87);
             this.lblBuscarNascimento.Name = "lblBuscarNascimento";
-            this.lblBuscarNascimento.Size = new System.Drawing.Size(168, 25);
+            this.lblBuscarNascimento.Size = new System.Drawing.Size(184, 28);
             this.lblBuscarNascimento.TabIndex = 10;
             this.lblBuscarNascimento.Text = "Data nascimento";
             // 
@@ -539,7 +538,7 @@
             this.mtbBuscarTelefone.Location = new System.Drawing.Point(112, 84);
             this.mtbBuscarTelefone.Mask = "(00) 00000 0000";
             this.mtbBuscarTelefone.Name = "mtbBuscarTelefone";
-            this.mtbBuscarTelefone.Size = new System.Drawing.Size(194, 30);
+            this.mtbBuscarTelefone.Size = new System.Drawing.Size(194, 33);
             this.mtbBuscarTelefone.TabIndex = 9;
             // 
             // lblBuscarTelefone
@@ -547,7 +546,7 @@
             this.lblBuscarTelefone.AutoSize = true;
             this.lblBuscarTelefone.Location = new System.Drawing.Point(13, 86);
             this.lblBuscarTelefone.Name = "lblBuscarTelefone";
-            this.lblBuscarTelefone.Size = new System.Drawing.Size(92, 25);
+            this.lblBuscarTelefone.Size = new System.Drawing.Size(99, 28);
             this.lblBuscarTelefone.TabIndex = 8;
             this.lblBuscarTelefone.Text = "Telefone";
             // 
@@ -555,7 +554,7 @@
             // 
             this.txtBuscarCidade.Location = new System.Drawing.Point(402, 47);
             this.txtBuscarCidade.Name = "txtBuscarCidade";
-            this.txtBuscarCidade.Size = new System.Drawing.Size(145, 30);
+            this.txtBuscarCidade.Size = new System.Drawing.Size(145, 33);
             this.txtBuscarCidade.TabIndex = 7;
             // 
             // lblBuscarBairro
@@ -563,7 +562,7 @@
             this.lblBuscarBairro.AutoSize = true;
             this.lblBuscarBairro.Location = new System.Drawing.Point(9, 48);
             this.lblBuscarBairro.Name = "lblBuscarBairro";
-            this.lblBuscarBairro.Size = new System.Drawing.Size(66, 25);
+            this.lblBuscarBairro.Size = new System.Drawing.Size(72, 28);
             this.lblBuscarBairro.TabIndex = 6;
             this.lblBuscarBairro.Text = "Bairro";
             // 
@@ -572,7 +571,7 @@
             this.lblBuscarCidade.AutoSize = true;
             this.lblBuscarCidade.Location = new System.Drawing.Point(320, 50);
             this.lblBuscarCidade.Name = "lblBuscarCidade";
-            this.lblBuscarCidade.Size = new System.Drawing.Size(76, 25);
+            this.lblBuscarCidade.Size = new System.Drawing.Size(82, 28);
             this.lblBuscarCidade.TabIndex = 5;
             this.lblBuscarCidade.Text = "Cidade";
             // 
@@ -580,7 +579,7 @@
             // 
             this.txtBuscarBairro.Location = new System.Drawing.Point(76, 46);
             this.txtBuscarBairro.Name = "txtBuscarBairro";
-            this.txtBuscarBairro.Size = new System.Drawing.Size(230, 30);
+            this.txtBuscarBairro.Size = new System.Drawing.Size(230, 33);
             this.txtBuscarBairro.TabIndex = 4;
             // 
             // lblBuscarEndereco
@@ -588,7 +587,7 @@
             this.lblBuscarEndereco.AutoSize = true;
             this.lblBuscarEndereco.Location = new System.Drawing.Point(426, 11);
             this.lblBuscarEndereco.Name = "lblBuscarEndereco";
-            this.lblBuscarEndereco.Size = new System.Drawing.Size(97, 25);
+            this.lblBuscarEndereco.Size = new System.Drawing.Size(106, 28);
             this.lblBuscarEndereco.TabIndex = 3;
             this.lblBuscarEndereco.Text = "Endereço";
             // 
@@ -596,14 +595,14 @@
             // 
             this.txtBuscarEndereco.Location = new System.Drawing.Point(529, 9);
             this.txtBuscarEndereco.Name = "txtBuscarEndereco";
-            this.txtBuscarEndereco.Size = new System.Drawing.Size(285, 30);
+            this.txtBuscarEndereco.Size = new System.Drawing.Size(285, 33);
             this.txtBuscarEndereco.TabIndex = 2;
             // 
             // txtBuscarNome
             // 
             this.txtBuscarNome.Location = new System.Drawing.Point(76, 10);
             this.txtBuscarNome.Name = "txtBuscarNome";
-            this.txtBuscarNome.Size = new System.Drawing.Size(344, 30);
+            this.txtBuscarNome.Size = new System.Drawing.Size(344, 33);
             this.txtBuscarNome.TabIndex = 1;
             // 
             // lblBuscarNome
@@ -611,124 +610,32 @@
             this.lblBuscarNome.AutoSize = true;
             this.lblBuscarNome.Location = new System.Drawing.Point(12, 13);
             this.lblBuscarNome.Name = "lblBuscarNome";
-            this.lblBuscarNome.Size = new System.Drawing.Size(68, 25);
+            this.lblBuscarNome.Size = new System.Drawing.Size(74, 28);
             this.lblBuscarNome.TabIndex = 0;
             this.lblBuscarNome.Text = "Nome";
             // 
             // tpAtualizar
             // 
-            this.tpAtualizar.Location = new System.Drawing.Point(4, 33);
+            this.tpAtualizar.Location = new System.Drawing.Point(4, 36);
             this.tpAtualizar.Name = "tpAtualizar";
             this.tpAtualizar.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAtualizar.Size = new System.Drawing.Size(985, 391);
+            this.tpAtualizar.Size = new System.Drawing.Size(985, 388);
             this.tpAtualizar.TabIndex = 1;
             this.tpAtualizar.Text = "Atualizar";
             this.tpAtualizar.UseVisualStyleBackColor = true;
             // 
             // tpDeletar
             // 
-            this.tpDeletar.Location = new System.Drawing.Point(4, 33);
+            this.tpDeletar.Location = new System.Drawing.Point(4, 36);
             this.tpDeletar.Name = "tpDeletar";
-            this.tpDeletar.Size = new System.Drawing.Size(985, 391);
+            this.tpDeletar.Size = new System.Drawing.Size(985, 388);
             this.tpDeletar.TabIndex = 2;
             this.tpDeletar.Text = "Deletar";
             this.tpDeletar.UseVisualStyleBackColor = true;
             // 
-            // dgv
-            // 
-            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.nome,
-            this.endereco,
-            this.bairro,
-            this.cidade,
-            this.telefone,
-            this.sexo,
-            this.nascimento,
-            this.fumante,
-            this.propriedades});
-            this.dgv.Location = new System.Drawing.Point(14, 129);
-            this.dgv.Name = "dgv";
-            this.dgv.RowHeadersWidth = 45;
-            this.dgv.Size = new System.Drawing.Size(950, 150);
-            this.dgv.TabIndex = 16;
-            // 
-            // id
-            // 
-            this.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.id.HeaderText = "ID";
-            this.id.MinimumWidth = 6;
-            this.id.Name = "id";
-            this.id.Width = 59;
-            // 
-            // nome
-            // 
-            this.nome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.nome.HeaderText = "Nome";
-            this.nome.MinimumWidth = 6;
-            this.nome.Name = "nome";
-            this.nome.Width = 95;
-            // 
-            // endereco
-            // 
-            this.endereco.HeaderText = "Endereço";
-            this.endereco.MinimumWidth = 6;
-            this.endereco.Name = "endereco";
-            this.endereco.Width = 110;
-            // 
-            // bairro
-            // 
-            this.bairro.HeaderText = "Bairro";
-            this.bairro.MinimumWidth = 6;
-            this.bairro.Name = "bairro";
-            this.bairro.Width = 110;
-            // 
-            // cidade
-            // 
-            this.cidade.HeaderText = "Cidade";
-            this.cidade.MinimumWidth = 6;
-            this.cidade.Name = "cidade";
-            this.cidade.Width = 110;
-            // 
-            // telefone
-            // 
-            this.telefone.HeaderText = "Telefone";
-            this.telefone.MinimumWidth = 6;
-            this.telefone.Name = "telefone";
-            this.telefone.Width = 110;
-            // 
-            // sexo
-            // 
-            this.sexo.HeaderText = "Sexo";
-            this.sexo.MinimumWidth = 6;
-            this.sexo.Name = "sexo";
-            this.sexo.Width = 110;
-            // 
-            // nascimento
-            // 
-            this.nascimento.HeaderText = "Nascimento";
-            this.nascimento.MinimumWidth = 6;
-            this.nascimento.Name = "nascimento";
-            this.nascimento.Width = 110;
-            // 
-            // fumante
-            // 
-            this.fumante.HeaderText = "Fumante";
-            this.fumante.MinimumWidth = 6;
-            this.fumante.Name = "fumante";
-            this.fumante.Width = 110;
-            // 
-            // propriedades
-            // 
-            this.propriedades.HeaderText = "Propriedades";
-            this.propriedades.MinimumWidth = 6;
-            this.propriedades.Name = "propriedades";
-            this.propriedades.Width = 110;
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
@@ -750,9 +657,9 @@
             this.tpCadastrar.ResumeLayout(false);
             this.tpBuscar.ResumeLayout(false);
             this.tpBuscar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.gbBuscarFumante.ResumeLayout(false);
             this.gbBuscarFumante.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -812,16 +719,6 @@
         private System.Windows.Forms.RadioButton rbBuscarFumanteSim;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridView dgv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn endereco;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bairro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cidade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telefone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sexo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nascimento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fumante;
-        private System.Windows.Forms.DataGridViewTextBoxColumn propriedades;
     }
 }
 
