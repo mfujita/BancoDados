@@ -42,7 +42,7 @@ namespace AulaBancoDeDados
 
             this.WindowState = FormWindowState.Maximized;
             
-            dgv.Size = new Size(tab.Width * 94 / 100, this.Height*50/100);
+            dgv.Size = new Size(tab.Width * 94 / 100, this.Height*70/100);
             dgv.Location = new Point(10, mtbBuscarTelefone.Bottom + 20);
 
             //dgv.Columns[0].Width = 50;

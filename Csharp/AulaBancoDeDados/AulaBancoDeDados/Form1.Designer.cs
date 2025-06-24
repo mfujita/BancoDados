@@ -81,6 +81,36 @@
             this.lblBuscarNome = new System.Windows.Forms.Label();
             this.tpAtualizar = new System.Windows.Forms.TabPage();
             this.tpDeletar = new System.Windows.Forms.TabPage();
+            this.gbAtualizarNome = new System.Windows.Forms.GroupBox();
+            this.mtbAtualizarDataNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.lblAtualizarDataNascimento = new System.Windows.Forms.Label();
+            this.mtbAtualizarTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.cbAtualizarSexo = new System.Windows.Forms.ComboBox();
+            this.lblAtualizarSexo = new System.Windows.Forms.Label();
+            this.lblAtualizarTelefone = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblAtualizarCidade = new System.Windows.Forms.Label();
+            this.txtAtualizarBairro = new System.Windows.Forms.TextBox();
+            this.lblAtualizarBairro = new System.Windows.Forms.Label();
+            this.txtAtualizarEndereco = new System.Windows.Forms.TextBox();
+            this.lblAtualizarEndereco = new System.Windows.Forms.Label();
+            this.txtAtualizarNome = new System.Windows.Forms.TextBox();
+            this.lblAtualizarNome = new System.Windows.Forms.Label();
+            this.gbAtualizarOutrasInformacoes = new System.Windows.Forms.GroupBox();
+            this.gbAtualizarPropriedades = new System.Windows.Forms.GroupBox();
+            this.cbAtualizarTablet = new System.Windows.Forms.CheckBox();
+            this.cbAtualizarCelular = new System.Windows.Forms.CheckBox();
+            this.cbAtualizarInternet = new System.Windows.Forms.CheckBox();
+            this.cbAtualizarNotebook = new System.Windows.Forms.CheckBox();
+            this.cbAtualizarComputadorDesktop = new System.Windows.Forms.CheckBox();
+            this.cbAtualizarServicoStreaming = new System.Windows.Forms.CheckBox();
+            this.cbAtualizarTVassinatura = new System.Windows.Forms.CheckBox();
+            this.cbAtualizarGeladeira = new System.Windows.Forms.CheckBox();
+            this.cbAtualizarVeiculos = new System.Windows.Forms.CheckBox();
+            this.gbAtualizarFumante = new System.Windows.Forms.GroupBox();
+            this.rbAtualizarFumanteSim = new System.Windows.Forms.RadioButton();
+            this.rbAtualizarFumanteNao = new System.Windows.Forms.RadioButton();
+            this.btnAtualizar = new System.Windows.Forms.Button();
             this.gbDadosPessoais.SuspendLayout();
             this.gbOutrasInformacoes.SuspendLayout();
             this.gbPertences.SuspendLayout();
@@ -90,6 +120,11 @@
             this.tpBuscar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.gbBuscarFumante.SuspendLayout();
+            this.tpAtualizar.SuspendLayout();
+            this.gbAtualizarNome.SuspendLayout();
+            this.gbAtualizarOutrasInformacoes.SuspendLayout();
+            this.gbAtualizarPropriedades.SuspendLayout();
+            this.gbAtualizarFumante.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNomeCompleto
@@ -97,7 +132,7 @@
             this.lblNomeCompleto.AutoSize = true;
             this.lblNomeCompleto.Location = new System.Drawing.Point(6, 36);
             this.lblNomeCompleto.Name = "lblNomeCompleto";
-            this.lblNomeCompleto.Size = new System.Drawing.Size(176, 28);
+            this.lblNomeCompleto.Size = new System.Drawing.Size(161, 25);
             this.lblNomeCompleto.TabIndex = 0;
             this.lblNomeCompleto.Text = "Nome completo";
             // 
@@ -130,7 +165,7 @@
             this.mtbDataNascimento.Location = new System.Drawing.Point(718, 145);
             this.mtbDataNascimento.Mask = "00/00/0000";
             this.mtbDataNascimento.Name = "mtbDataNascimento";
-            this.mtbDataNascimento.Size = new System.Drawing.Size(142, 33);
+            this.mtbDataNascimento.Size = new System.Drawing.Size(142, 30);
             this.mtbDataNascimento.TabIndex = 6;
             // 
             // lblDataNascimento
@@ -138,7 +173,7 @@
             this.lblDataNascimento.AutoSize = true;
             this.lblDataNascimento.Location = new System.Drawing.Point(515, 150);
             this.lblDataNascimento.Name = "lblDataNascimento";
-            this.lblDataNascimento.Size = new System.Drawing.Size(215, 28);
+            this.lblDataNascimento.Size = new System.Drawing.Size(197, 25);
             this.lblDataNascimento.TabIndex = 13;
             this.lblDataNascimento.Text = "Data de nascimento";
             // 
@@ -147,7 +182,7 @@
             this.mtbTelefone.Location = new System.Drawing.Point(168, 146);
             this.mtbTelefone.Mask = "(00) 00000 0000";
             this.mtbTelefone.Name = "mtbTelefone";
-            this.mtbTelefone.Size = new System.Drawing.Size(150, 33);
+            this.mtbTelefone.Size = new System.Drawing.Size(150, 30);
             this.mtbTelefone.TabIndex = 4;
             // 
             // cbSexo
@@ -158,7 +193,7 @@
             "Feminino"});
             this.cbSexo.Location = new System.Drawing.Point(386, 146);
             this.cbSexo.Name = "cbSexo";
-            this.cbSexo.Size = new System.Drawing.Size(121, 35);
+            this.cbSexo.Size = new System.Drawing.Size(121, 32);
             this.cbSexo.TabIndex = 5;
             // 
             // lblSexo
@@ -166,7 +201,7 @@
             this.lblSexo.AutoSize = true;
             this.lblSexo.Location = new System.Drawing.Point(324, 148);
             this.lblSexo.Name = "lblSexo";
-            this.lblSexo.Size = new System.Drawing.Size(60, 28);
+            this.lblSexo.Size = new System.Drawing.Size(56, 25);
             this.lblSexo.TabIndex = 10;
             this.lblSexo.Text = "Sexo";
             // 
@@ -175,7 +210,7 @@
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.Location = new System.Drawing.Point(70, 146);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(99, 28);
+            this.lblTelefone.Size = new System.Drawing.Size(92, 25);
             this.lblTelefone.TabIndex = 8;
             this.lblTelefone.Text = "Telefone";
             // 
@@ -183,7 +218,7 @@
             // 
             this.txtCidade.Location = new System.Drawing.Point(588, 107);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(272, 33);
+            this.txtCidade.Size = new System.Drawing.Size(272, 30);
             this.txtCidade.TabIndex = 3;
             // 
             // lblCidade
@@ -191,7 +226,7 @@
             this.lblCidade.AutoSize = true;
             this.lblCidade.Location = new System.Drawing.Point(513, 110);
             this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(82, 28);
+            this.lblCidade.Size = new System.Drawing.Size(76, 25);
             this.lblCidade.TabIndex = 6;
             this.lblCidade.Text = "Cidade";
             // 
@@ -199,7 +234,7 @@
             // 
             this.txtBairro.Location = new System.Drawing.Point(168, 110);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(339, 33);
+            this.txtBairro.Size = new System.Drawing.Size(339, 30);
             this.txtBairro.TabIndex = 2;
             // 
             // lblBairro
@@ -207,7 +242,7 @@
             this.lblBairro.AutoSize = true;
             this.lblBairro.Location = new System.Drawing.Point(101, 110);
             this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(72, 28);
+            this.lblBairro.Size = new System.Drawing.Size(66, 25);
             this.lblBairro.TabIndex = 4;
             this.lblBairro.Text = "Bairro";
             // 
@@ -215,7 +250,7 @@
             // 
             this.txtEndereco.Location = new System.Drawing.Point(168, 73);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(692, 33);
+            this.txtEndereco.Size = new System.Drawing.Size(692, 30);
             this.txtEndereco.TabIndex = 1;
             // 
             // lblEndereco
@@ -223,7 +258,7 @@
             this.lblEndereco.AutoSize = true;
             this.lblEndereco.Location = new System.Drawing.Point(70, 76);
             this.lblEndereco.Name = "lblEndereco";
-            this.lblEndereco.Size = new System.Drawing.Size(106, 28);
+            this.lblEndereco.Size = new System.Drawing.Size(97, 25);
             this.lblEndereco.TabIndex = 2;
             this.lblEndereco.Text = "Endereço";
             // 
@@ -231,7 +266,7 @@
             // 
             this.txtNome.Location = new System.Drawing.Point(168, 33);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(693, 33);
+            this.txtNome.Size = new System.Drawing.Size(693, 30);
             this.txtNome.TabIndex = 0;
             // 
             // gbOutrasInformacoes
@@ -271,7 +306,7 @@
             this.cbItensTablet.AutoSize = true;
             this.cbItensTablet.Location = new System.Drawing.Point(396, 98);
             this.cbItensTablet.Name = "cbItensTablet";
-            this.cbItensTablet.Size = new System.Drawing.Size(97, 32);
+            this.cbItensTablet.Size = new System.Drawing.Size(88, 29);
             this.cbItensTablet.TabIndex = 8;
             this.cbItensTablet.Text = "Tablet";
             this.cbItensTablet.UseVisualStyleBackColor = true;
@@ -281,7 +316,7 @@
             this.cbItensCelular.AutoSize = true;
             this.cbItensCelular.Location = new System.Drawing.Point(396, 63);
             this.cbItensCelular.Name = "cbItensCelular";
-            this.cbItensCelular.Size = new System.Drawing.Size(105, 32);
+            this.cbItensCelular.Size = new System.Drawing.Size(95, 29);
             this.cbItensCelular.TabIndex = 7;
             this.cbItensCelular.Text = "Celular";
             this.cbItensCelular.UseVisualStyleBackColor = true;
@@ -291,7 +326,7 @@
             this.cbItensInternet.AutoSize = true;
             this.cbItensInternet.Location = new System.Drawing.Point(10, 98);
             this.cbItensInternet.Name = "cbItensInternet";
-            this.cbItensInternet.Size = new System.Drawing.Size(114, 32);
+            this.cbItensInternet.Size = new System.Drawing.Size(104, 29);
             this.cbItensInternet.TabIndex = 2;
             this.cbItensInternet.Text = "Internet";
             this.cbItensInternet.UseVisualStyleBackColor = true;
@@ -301,7 +336,7 @@
             this.cbItensNotebook.AutoSize = true;
             this.cbItensNotebook.Location = new System.Drawing.Point(396, 26);
             this.cbItensNotebook.Name = "cbItensNotebook";
-            this.cbItensNotebook.Size = new System.Drawing.Size(134, 32);
+            this.cbItensNotebook.Size = new System.Drawing.Size(122, 29);
             this.cbItensNotebook.TabIndex = 6;
             this.cbItensNotebook.Text = "Notebook";
             this.cbItensNotebook.UseVisualStyleBackColor = true;
@@ -311,7 +346,7 @@
             this.cbItensComputadorDesktop.AutoSize = true;
             this.cbItensComputadorDesktop.Location = new System.Drawing.Point(149, 98);
             this.cbItensComputadorDesktop.Name = "cbItensComputadorDesktop";
-            this.cbItensComputadorDesktop.Size = new System.Drawing.Size(247, 32);
+            this.cbItensComputadorDesktop.Size = new System.Drawing.Size(226, 29);
             this.cbItensComputadorDesktop.TabIndex = 5;
             this.cbItensComputadorDesktop.Text = "Computador desktop";
             this.cbItensComputadorDesktop.UseVisualStyleBackColor = true;
@@ -321,7 +356,7 @@
             this.cbItensServicoStreaming.AutoSize = true;
             this.cbItensServicoStreaming.Location = new System.Drawing.Point(149, 63);
             this.cbItensServicoStreaming.Name = "cbItensServicoStreaming";
-            this.cbItensServicoStreaming.Size = new System.Drawing.Size(246, 32);
+            this.cbItensServicoStreaming.Size = new System.Drawing.Size(224, 29);
             this.cbItensServicoStreaming.TabIndex = 4;
             this.cbItensServicoStreaming.Text = "Serviço de streaming";
             this.cbItensServicoStreaming.UseVisualStyleBackColor = true;
@@ -331,7 +366,7 @@
             this.cbItensTvAssinatura.AutoSize = true;
             this.cbItensTvAssinatura.Location = new System.Drawing.Point(149, 29);
             this.cbItensTvAssinatura.Name = "cbItensTvAssinatura";
-            this.cbItensTvAssinatura.Size = new System.Drawing.Size(210, 32);
+            this.cbItensTvAssinatura.Size = new System.Drawing.Size(192, 29);
             this.cbItensTvAssinatura.TabIndex = 3;
             this.cbItensTvAssinatura.Text = "TV por assinatura";
             this.cbItensTvAssinatura.UseVisualStyleBackColor = true;
@@ -341,7 +376,7 @@
             this.cbItensGeladeira.AutoSize = true;
             this.cbItensGeladeira.Location = new System.Drawing.Point(10, 62);
             this.cbItensGeladeira.Name = "cbItensGeladeira";
-            this.cbItensGeladeira.Size = new System.Drawing.Size(131, 32);
+            this.cbItensGeladeira.Size = new System.Drawing.Size(118, 29);
             this.cbItensGeladeira.TabIndex = 1;
             this.cbItensGeladeira.Text = "Geladeira";
             this.cbItensGeladeira.UseVisualStyleBackColor = true;
@@ -351,7 +386,7 @@
             this.cbItensVeiculo.AutoSize = true;
             this.cbItensVeiculo.Location = new System.Drawing.Point(10, 29);
             this.cbItensVeiculo.Name = "cbItensVeiculo";
-            this.cbItensVeiculo.Size = new System.Drawing.Size(109, 32);
+            this.cbItensVeiculo.Size = new System.Drawing.Size(99, 29);
             this.cbItensVeiculo.TabIndex = 0;
             this.cbItensVeiculo.Text = "Veículo";
             this.cbItensVeiculo.UseVisualStyleBackColor = true;
@@ -373,7 +408,7 @@
             this.rbFumanteSim.AutoSize = true;
             this.rbFumanteSim.Location = new System.Drawing.Point(18, 90);
             this.rbFumanteSim.Name = "rbFumanteSim";
-            this.rbFumanteSim.Size = new System.Drawing.Size(71, 32);
+            this.rbFumanteSim.Size = new System.Drawing.Size(64, 29);
             this.rbFumanteSim.TabIndex = 1;
             this.rbFumanteSim.TabStop = true;
             this.rbFumanteSim.Text = "Sim";
@@ -384,7 +419,7 @@
             this.rbFumanteNao.AutoSize = true;
             this.rbFumanteNao.Location = new System.Drawing.Point(16, 51);
             this.rbFumanteNao.Name = "rbFumanteNao";
-            this.rbFumanteNao.Size = new System.Drawing.Size(75, 32);
+            this.rbFumanteNao.Size = new System.Drawing.Size(68, 29);
             this.rbFumanteNao.TabIndex = 0;
             this.rbFumanteNao.TabStop = true;
             this.rbFumanteNao.Text = "Não";
@@ -410,10 +445,10 @@
             this.tpCadastrar.Controls.Add(this.btnEnviar);
             this.tpCadastrar.Controls.Add(this.gbDadosPessoais);
             this.tpCadastrar.Controls.Add(this.gbOutrasInformacoes);
-            this.tpCadastrar.Location = new System.Drawing.Point(4, 36);
+            this.tpCadastrar.Location = new System.Drawing.Point(4, 33);
             this.tpCadastrar.Name = "tpCadastrar";
             this.tpCadastrar.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCadastrar.Size = new System.Drawing.Size(985, 388);
+            this.tpCadastrar.Size = new System.Drawing.Size(985, 391);
             this.tpCadastrar.TabIndex = 0;
             this.tpCadastrar.Text = "Cadastrar";
             this.tpCadastrar.UseVisualStyleBackColor = true;
@@ -446,9 +481,9 @@
             this.tpBuscar.Controls.Add(this.txtBuscarEndereco);
             this.tpBuscar.Controls.Add(this.txtBuscarNome);
             this.tpBuscar.Controls.Add(this.lblBuscarNome);
-            this.tpBuscar.Location = new System.Drawing.Point(4, 36);
+            this.tpBuscar.Location = new System.Drawing.Point(4, 33);
             this.tpBuscar.Name = "tpBuscar";
-            this.tpBuscar.Size = new System.Drawing.Size(985, 388);
+            this.tpBuscar.Size = new System.Drawing.Size(985, 391);
             this.tpBuscar.TabIndex = 3;
             this.tpBuscar.Text = "Buscar";
             this.tpBuscar.UseVisualStyleBackColor = true;
@@ -480,7 +515,7 @@
             "F"});
             this.cbBuscarSexo.Location = new System.Drawing.Point(559, 46);
             this.cbBuscarSexo.Name = "cbBuscarSexo";
-            this.cbBuscarSexo.Size = new System.Drawing.Size(121, 35);
+            this.cbBuscarSexo.Size = new System.Drawing.Size(121, 32);
             this.cbBuscarSexo.TabIndex = 13;
             // 
             // gbBuscarFumante
@@ -499,7 +534,7 @@
             this.rbBuscarFumanteNao.AutoSize = true;
             this.rbBuscarFumanteNao.Location = new System.Drawing.Point(118, 25);
             this.rbBuscarFumanteNao.Name = "rbBuscarFumanteNao";
-            this.rbBuscarFumanteNao.Size = new System.Drawing.Size(75, 32);
+            this.rbBuscarFumanteNao.Size = new System.Drawing.Size(68, 29);
             this.rbBuscarFumanteNao.TabIndex = 1;
             this.rbBuscarFumanteNao.TabStop = true;
             this.rbBuscarFumanteNao.Text = "Não";
@@ -510,7 +545,7 @@
             this.rbBuscarFumanteSim.AutoSize = true;
             this.rbBuscarFumanteSim.Location = new System.Drawing.Point(12, 25);
             this.rbBuscarFumanteSim.Name = "rbBuscarFumanteSim";
-            this.rbBuscarFumanteSim.Size = new System.Drawing.Size(71, 32);
+            this.rbBuscarFumanteSim.Size = new System.Drawing.Size(64, 29);
             this.rbBuscarFumanteSim.TabIndex = 0;
             this.rbBuscarFumanteSim.TabStop = true;
             this.rbBuscarFumanteSim.Text = "Sim";
@@ -521,7 +556,7 @@
             this.mtbBuscarNascimento.Location = new System.Drawing.Point(486, 87);
             this.mtbBuscarNascimento.Mask = "(00) 00000 0000";
             this.mtbBuscarNascimento.Name = "mtbBuscarNascimento";
-            this.mtbBuscarNascimento.Size = new System.Drawing.Size(194, 33);
+            this.mtbBuscarNascimento.Size = new System.Drawing.Size(194, 30);
             this.mtbBuscarNascimento.TabIndex = 11;
             // 
             // lblBuscarNascimento
@@ -529,7 +564,7 @@
             this.lblBuscarNascimento.AutoSize = true;
             this.lblBuscarNascimento.Location = new System.Drawing.Point(312, 87);
             this.lblBuscarNascimento.Name = "lblBuscarNascimento";
-            this.lblBuscarNascimento.Size = new System.Drawing.Size(184, 28);
+            this.lblBuscarNascimento.Size = new System.Drawing.Size(168, 25);
             this.lblBuscarNascimento.TabIndex = 10;
             this.lblBuscarNascimento.Text = "Data nascimento";
             // 
@@ -538,7 +573,7 @@
             this.mtbBuscarTelefone.Location = new System.Drawing.Point(112, 84);
             this.mtbBuscarTelefone.Mask = "(00) 00000 0000";
             this.mtbBuscarTelefone.Name = "mtbBuscarTelefone";
-            this.mtbBuscarTelefone.Size = new System.Drawing.Size(194, 33);
+            this.mtbBuscarTelefone.Size = new System.Drawing.Size(194, 30);
             this.mtbBuscarTelefone.TabIndex = 9;
             // 
             // lblBuscarTelefone
@@ -546,7 +581,7 @@
             this.lblBuscarTelefone.AutoSize = true;
             this.lblBuscarTelefone.Location = new System.Drawing.Point(13, 86);
             this.lblBuscarTelefone.Name = "lblBuscarTelefone";
-            this.lblBuscarTelefone.Size = new System.Drawing.Size(99, 28);
+            this.lblBuscarTelefone.Size = new System.Drawing.Size(92, 25);
             this.lblBuscarTelefone.TabIndex = 8;
             this.lblBuscarTelefone.Text = "Telefone";
             // 
@@ -554,7 +589,7 @@
             // 
             this.txtBuscarCidade.Location = new System.Drawing.Point(402, 47);
             this.txtBuscarCidade.Name = "txtBuscarCidade";
-            this.txtBuscarCidade.Size = new System.Drawing.Size(145, 33);
+            this.txtBuscarCidade.Size = new System.Drawing.Size(145, 30);
             this.txtBuscarCidade.TabIndex = 7;
             // 
             // lblBuscarBairro
@@ -562,7 +597,7 @@
             this.lblBuscarBairro.AutoSize = true;
             this.lblBuscarBairro.Location = new System.Drawing.Point(9, 48);
             this.lblBuscarBairro.Name = "lblBuscarBairro";
-            this.lblBuscarBairro.Size = new System.Drawing.Size(72, 28);
+            this.lblBuscarBairro.Size = new System.Drawing.Size(66, 25);
             this.lblBuscarBairro.TabIndex = 6;
             this.lblBuscarBairro.Text = "Bairro";
             // 
@@ -571,7 +606,7 @@
             this.lblBuscarCidade.AutoSize = true;
             this.lblBuscarCidade.Location = new System.Drawing.Point(320, 50);
             this.lblBuscarCidade.Name = "lblBuscarCidade";
-            this.lblBuscarCidade.Size = new System.Drawing.Size(82, 28);
+            this.lblBuscarCidade.Size = new System.Drawing.Size(76, 25);
             this.lblBuscarCidade.TabIndex = 5;
             this.lblBuscarCidade.Text = "Cidade";
             // 
@@ -579,7 +614,7 @@
             // 
             this.txtBuscarBairro.Location = new System.Drawing.Point(76, 46);
             this.txtBuscarBairro.Name = "txtBuscarBairro";
-            this.txtBuscarBairro.Size = new System.Drawing.Size(230, 33);
+            this.txtBuscarBairro.Size = new System.Drawing.Size(230, 30);
             this.txtBuscarBairro.TabIndex = 4;
             // 
             // lblBuscarEndereco
@@ -587,7 +622,7 @@
             this.lblBuscarEndereco.AutoSize = true;
             this.lblBuscarEndereco.Location = new System.Drawing.Point(426, 11);
             this.lblBuscarEndereco.Name = "lblBuscarEndereco";
-            this.lblBuscarEndereco.Size = new System.Drawing.Size(106, 28);
+            this.lblBuscarEndereco.Size = new System.Drawing.Size(97, 25);
             this.lblBuscarEndereco.TabIndex = 3;
             this.lblBuscarEndereco.Text = "Endereço";
             // 
@@ -595,14 +630,14 @@
             // 
             this.txtBuscarEndereco.Location = new System.Drawing.Point(529, 9);
             this.txtBuscarEndereco.Name = "txtBuscarEndereco";
-            this.txtBuscarEndereco.Size = new System.Drawing.Size(285, 33);
+            this.txtBuscarEndereco.Size = new System.Drawing.Size(285, 30);
             this.txtBuscarEndereco.TabIndex = 2;
             // 
             // txtBuscarNome
             // 
             this.txtBuscarNome.Location = new System.Drawing.Point(76, 10);
             this.txtBuscarNome.Name = "txtBuscarNome";
-            this.txtBuscarNome.Size = new System.Drawing.Size(344, 33);
+            this.txtBuscarNome.Size = new System.Drawing.Size(344, 30);
             this.txtBuscarNome.TabIndex = 1;
             // 
             // lblBuscarNome
@@ -610,32 +645,342 @@
             this.lblBuscarNome.AutoSize = true;
             this.lblBuscarNome.Location = new System.Drawing.Point(12, 13);
             this.lblBuscarNome.Name = "lblBuscarNome";
-            this.lblBuscarNome.Size = new System.Drawing.Size(74, 28);
+            this.lblBuscarNome.Size = new System.Drawing.Size(68, 25);
             this.lblBuscarNome.TabIndex = 0;
             this.lblBuscarNome.Text = "Nome";
             // 
             // tpAtualizar
             // 
-            this.tpAtualizar.Location = new System.Drawing.Point(4, 36);
+            this.tpAtualizar.Controls.Add(this.btnAtualizar);
+            this.tpAtualizar.Controls.Add(this.gbAtualizarOutrasInformacoes);
+            this.tpAtualizar.Controls.Add(this.gbAtualizarNome);
+            this.tpAtualizar.Location = new System.Drawing.Point(4, 33);
             this.tpAtualizar.Name = "tpAtualizar";
             this.tpAtualizar.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAtualizar.Size = new System.Drawing.Size(985, 388);
+            this.tpAtualizar.Size = new System.Drawing.Size(985, 391);
             this.tpAtualizar.TabIndex = 1;
             this.tpAtualizar.Text = "Atualizar";
             this.tpAtualizar.UseVisualStyleBackColor = true;
             // 
             // tpDeletar
             // 
-            this.tpDeletar.Location = new System.Drawing.Point(4, 36);
+            this.tpDeletar.Location = new System.Drawing.Point(4, 33);
             this.tpDeletar.Name = "tpDeletar";
-            this.tpDeletar.Size = new System.Drawing.Size(985, 388);
+            this.tpDeletar.Size = new System.Drawing.Size(985, 391);
             this.tpDeletar.TabIndex = 2;
             this.tpDeletar.Text = "Deletar";
             this.tpDeletar.UseVisualStyleBackColor = true;
             // 
+            // gbAtualizarNome
+            // 
+            this.gbAtualizarNome.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.gbAtualizarNome.Controls.Add(this.mtbAtualizarDataNascimento);
+            this.gbAtualizarNome.Controls.Add(this.lblAtualizarDataNascimento);
+            this.gbAtualizarNome.Controls.Add(this.mtbAtualizarTelefone);
+            this.gbAtualizarNome.Controls.Add(this.cbAtualizarSexo);
+            this.gbAtualizarNome.Controls.Add(this.lblAtualizarSexo);
+            this.gbAtualizarNome.Controls.Add(this.lblAtualizarTelefone);
+            this.gbAtualizarNome.Controls.Add(this.textBox1);
+            this.gbAtualizarNome.Controls.Add(this.lblAtualizarCidade);
+            this.gbAtualizarNome.Controls.Add(this.txtAtualizarBairro);
+            this.gbAtualizarNome.Controls.Add(this.lblAtualizarBairro);
+            this.gbAtualizarNome.Controls.Add(this.txtAtualizarEndereco);
+            this.gbAtualizarNome.Controls.Add(this.lblAtualizarEndereco);
+            this.gbAtualizarNome.Controls.Add(this.txtAtualizarNome);
+            this.gbAtualizarNome.Controls.Add(this.lblAtualizarNome);
+            this.gbAtualizarNome.Location = new System.Drawing.Point(6, 6);
+            this.gbAtualizarNome.Name = "gbAtualizarNome";
+            this.gbAtualizarNome.Size = new System.Drawing.Size(904, 194);
+            this.gbAtualizarNome.TabIndex = 2;
+            this.gbAtualizarNome.TabStop = false;
+            this.gbAtualizarNome.Text = "Dados pessoais";
+            // 
+            // mtbAtualizarDataNascimento
+            // 
+            this.mtbAtualizarDataNascimento.Location = new System.Drawing.Point(718, 145);
+            this.mtbAtualizarDataNascimento.Mask = "00/00/0000";
+            this.mtbAtualizarDataNascimento.Name = "mtbAtualizarDataNascimento";
+            this.mtbAtualizarDataNascimento.Size = new System.Drawing.Size(142, 30);
+            this.mtbAtualizarDataNascimento.TabIndex = 6;
+            // 
+            // lblAtualizarDataNascimento
+            // 
+            this.lblAtualizarDataNascimento.AutoSize = true;
+            this.lblAtualizarDataNascimento.Location = new System.Drawing.Point(515, 150);
+            this.lblAtualizarDataNascimento.Name = "lblAtualizarDataNascimento";
+            this.lblAtualizarDataNascimento.Size = new System.Drawing.Size(197, 25);
+            this.lblAtualizarDataNascimento.TabIndex = 13;
+            this.lblAtualizarDataNascimento.Text = "Data de nascimento";
+            // 
+            // mtbAtualizarTelefone
+            // 
+            this.mtbAtualizarTelefone.Location = new System.Drawing.Point(168, 146);
+            this.mtbAtualizarTelefone.Mask = "(00) 00000 0000";
+            this.mtbAtualizarTelefone.Name = "mtbAtualizarTelefone";
+            this.mtbAtualizarTelefone.Size = new System.Drawing.Size(150, 30);
+            this.mtbAtualizarTelefone.TabIndex = 4;
+            // 
+            // cbAtualizarSexo
+            // 
+            this.cbAtualizarSexo.FormattingEnabled = true;
+            this.cbAtualizarSexo.Items.AddRange(new object[] {
+            "Masculino",
+            "Feminino"});
+            this.cbAtualizarSexo.Location = new System.Drawing.Point(386, 146);
+            this.cbAtualizarSexo.Name = "cbAtualizarSexo";
+            this.cbAtualizarSexo.Size = new System.Drawing.Size(121, 32);
+            this.cbAtualizarSexo.TabIndex = 5;
+            // 
+            // lblAtualizarSexo
+            // 
+            this.lblAtualizarSexo.AutoSize = true;
+            this.lblAtualizarSexo.Location = new System.Drawing.Point(324, 148);
+            this.lblAtualizarSexo.Name = "lblAtualizarSexo";
+            this.lblAtualizarSexo.Size = new System.Drawing.Size(56, 25);
+            this.lblAtualizarSexo.TabIndex = 10;
+            this.lblAtualizarSexo.Text = "Sexo";
+            // 
+            // lblAtualizarTelefone
+            // 
+            this.lblAtualizarTelefone.AutoSize = true;
+            this.lblAtualizarTelefone.Location = new System.Drawing.Point(70, 146);
+            this.lblAtualizarTelefone.Name = "lblAtualizarTelefone";
+            this.lblAtualizarTelefone.Size = new System.Drawing.Size(92, 25);
+            this.lblAtualizarTelefone.TabIndex = 8;
+            this.lblAtualizarTelefone.Text = "Telefone";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(588, 107);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(272, 30);
+            this.textBox1.TabIndex = 3;
+            // 
+            // lblAtualizarCidade
+            // 
+            this.lblAtualizarCidade.AutoSize = true;
+            this.lblAtualizarCidade.Location = new System.Drawing.Point(513, 110);
+            this.lblAtualizarCidade.Name = "lblAtualizarCidade";
+            this.lblAtualizarCidade.Size = new System.Drawing.Size(76, 25);
+            this.lblAtualizarCidade.TabIndex = 6;
+            this.lblAtualizarCidade.Text = "Cidade";
+            // 
+            // txtAtualizarBairro
+            // 
+            this.txtAtualizarBairro.Location = new System.Drawing.Point(168, 110);
+            this.txtAtualizarBairro.Name = "txtAtualizarBairro";
+            this.txtAtualizarBairro.Size = new System.Drawing.Size(339, 30);
+            this.txtAtualizarBairro.TabIndex = 2;
+            // 
+            // lblAtualizarBairro
+            // 
+            this.lblAtualizarBairro.AutoSize = true;
+            this.lblAtualizarBairro.Location = new System.Drawing.Point(101, 110);
+            this.lblAtualizarBairro.Name = "lblAtualizarBairro";
+            this.lblAtualizarBairro.Size = new System.Drawing.Size(66, 25);
+            this.lblAtualizarBairro.TabIndex = 4;
+            this.lblAtualizarBairro.Text = "Bairro";
+            // 
+            // txtAtualizarEndereco
+            // 
+            this.txtAtualizarEndereco.Location = new System.Drawing.Point(168, 73);
+            this.txtAtualizarEndereco.Name = "txtAtualizarEndereco";
+            this.txtAtualizarEndereco.Size = new System.Drawing.Size(692, 30);
+            this.txtAtualizarEndereco.TabIndex = 1;
+            // 
+            // lblAtualizarEndereco
+            // 
+            this.lblAtualizarEndereco.AutoSize = true;
+            this.lblAtualizarEndereco.Location = new System.Drawing.Point(70, 76);
+            this.lblAtualizarEndereco.Name = "lblAtualizarEndereco";
+            this.lblAtualizarEndereco.Size = new System.Drawing.Size(97, 25);
+            this.lblAtualizarEndereco.TabIndex = 2;
+            this.lblAtualizarEndereco.Text = "Endereço";
+            // 
+            // txtAtualizarNome
+            // 
+            this.txtAtualizarNome.Location = new System.Drawing.Point(168, 33);
+            this.txtAtualizarNome.Name = "txtAtualizarNome";
+            this.txtAtualizarNome.Size = new System.Drawing.Size(693, 30);
+            this.txtAtualizarNome.TabIndex = 0;
+            // 
+            // lblAtualizarNome
+            // 
+            this.lblAtualizarNome.AutoSize = true;
+            this.lblAtualizarNome.Location = new System.Drawing.Point(6, 36);
+            this.lblAtualizarNome.Name = "lblAtualizarNome";
+            this.lblAtualizarNome.Size = new System.Drawing.Size(161, 25);
+            this.lblAtualizarNome.TabIndex = 0;
+            this.lblAtualizarNome.Text = "Nome completo";
+            // 
+            // gbAtualizarOutrasInformacoes
+            // 
+            this.gbAtualizarOutrasInformacoes.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.gbAtualizarOutrasInformacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.gbAtualizarOutrasInformacoes.Controls.Add(this.gbAtualizarPropriedades);
+            this.gbAtualizarOutrasInformacoes.Controls.Add(this.gbAtualizarFumante);
+            this.gbAtualizarOutrasInformacoes.Location = new System.Drawing.Point(6, 206);
+            this.gbAtualizarOutrasInformacoes.Name = "gbAtualizarOutrasInformacoes";
+            this.gbAtualizarOutrasInformacoes.Size = new System.Drawing.Size(687, 175);
+            this.gbAtualizarOutrasInformacoes.TabIndex = 3;
+            this.gbAtualizarOutrasInformacoes.TabStop = false;
+            this.gbAtualizarOutrasInformacoes.Text = "Outras informações";
+            // 
+            // gbAtualizarPropriedades
+            // 
+            this.gbAtualizarPropriedades.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarTablet);
+            this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarCelular);
+            this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarInternet);
+            this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarNotebook);
+            this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarComputadorDesktop);
+            this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarServicoStreaming);
+            this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarTVassinatura);
+            this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarGeladeira);
+            this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarVeiculos);
+            this.gbAtualizarPropriedades.Location = new System.Drawing.Point(124, 30);
+            this.gbAtualizarPropriedades.Name = "gbAtualizarPropriedades";
+            this.gbAtualizarPropriedades.Size = new System.Drawing.Size(543, 133);
+            this.gbAtualizarPropriedades.TabIndex = 1;
+            this.gbAtualizarPropriedades.TabStop = false;
+            this.gbAtualizarPropriedades.Text = "Assinale os itens que possui:";
+            // 
+            // cbAtualizarTablet
+            // 
+            this.cbAtualizarTablet.AutoSize = true;
+            this.cbAtualizarTablet.Location = new System.Drawing.Point(396, 98);
+            this.cbAtualizarTablet.Name = "cbAtualizarTablet";
+            this.cbAtualizarTablet.Size = new System.Drawing.Size(88, 29);
+            this.cbAtualizarTablet.TabIndex = 8;
+            this.cbAtualizarTablet.Text = "Tablet";
+            this.cbAtualizarTablet.UseVisualStyleBackColor = true;
+            // 
+            // cbAtualizarCelular
+            // 
+            this.cbAtualizarCelular.AutoSize = true;
+            this.cbAtualizarCelular.Location = new System.Drawing.Point(396, 63);
+            this.cbAtualizarCelular.Name = "cbAtualizarCelular";
+            this.cbAtualizarCelular.Size = new System.Drawing.Size(95, 29);
+            this.cbAtualizarCelular.TabIndex = 7;
+            this.cbAtualizarCelular.Text = "Celular";
+            this.cbAtualizarCelular.UseVisualStyleBackColor = true;
+            // 
+            // cbAtualizarInternet
+            // 
+            this.cbAtualizarInternet.AutoSize = true;
+            this.cbAtualizarInternet.Location = new System.Drawing.Point(10, 98);
+            this.cbAtualizarInternet.Name = "cbAtualizarInternet";
+            this.cbAtualizarInternet.Size = new System.Drawing.Size(104, 29);
+            this.cbAtualizarInternet.TabIndex = 2;
+            this.cbAtualizarInternet.Text = "Internet";
+            this.cbAtualizarInternet.UseVisualStyleBackColor = true;
+            // 
+            // cbAtualizarNotebook
+            // 
+            this.cbAtualizarNotebook.AutoSize = true;
+            this.cbAtualizarNotebook.Location = new System.Drawing.Point(396, 26);
+            this.cbAtualizarNotebook.Name = "cbAtualizarNotebook";
+            this.cbAtualizarNotebook.Size = new System.Drawing.Size(122, 29);
+            this.cbAtualizarNotebook.TabIndex = 6;
+            this.cbAtualizarNotebook.Text = "Notebook";
+            this.cbAtualizarNotebook.UseVisualStyleBackColor = true;
+            // 
+            // cbAtualizarComputadorDesktop
+            // 
+            this.cbAtualizarComputadorDesktop.AutoSize = true;
+            this.cbAtualizarComputadorDesktop.Location = new System.Drawing.Point(149, 98);
+            this.cbAtualizarComputadorDesktop.Name = "cbAtualizarComputadorDesktop";
+            this.cbAtualizarComputadorDesktop.Size = new System.Drawing.Size(226, 29);
+            this.cbAtualizarComputadorDesktop.TabIndex = 5;
+            this.cbAtualizarComputadorDesktop.Text = "Computador desktop";
+            this.cbAtualizarComputadorDesktop.UseVisualStyleBackColor = true;
+            // 
+            // cbAtualizarServicoStreaming
+            // 
+            this.cbAtualizarServicoStreaming.AutoSize = true;
+            this.cbAtualizarServicoStreaming.Location = new System.Drawing.Point(149, 63);
+            this.cbAtualizarServicoStreaming.Name = "cbAtualizarServicoStreaming";
+            this.cbAtualizarServicoStreaming.Size = new System.Drawing.Size(224, 29);
+            this.cbAtualizarServicoStreaming.TabIndex = 4;
+            this.cbAtualizarServicoStreaming.Text = "Serviço de streaming";
+            this.cbAtualizarServicoStreaming.UseVisualStyleBackColor = true;
+            // 
+            // cbAtualizarTVassinatura
+            // 
+            this.cbAtualizarTVassinatura.AutoSize = true;
+            this.cbAtualizarTVassinatura.Location = new System.Drawing.Point(149, 29);
+            this.cbAtualizarTVassinatura.Name = "cbAtualizarTVassinatura";
+            this.cbAtualizarTVassinatura.Size = new System.Drawing.Size(192, 29);
+            this.cbAtualizarTVassinatura.TabIndex = 3;
+            this.cbAtualizarTVassinatura.Text = "TV por assinatura";
+            this.cbAtualizarTVassinatura.UseVisualStyleBackColor = true;
+            // 
+            // cbAtualizarGeladeira
+            // 
+            this.cbAtualizarGeladeira.AutoSize = true;
+            this.cbAtualizarGeladeira.Location = new System.Drawing.Point(10, 62);
+            this.cbAtualizarGeladeira.Name = "cbAtualizarGeladeira";
+            this.cbAtualizarGeladeira.Size = new System.Drawing.Size(118, 29);
+            this.cbAtualizarGeladeira.TabIndex = 1;
+            this.cbAtualizarGeladeira.Text = "Geladeira";
+            this.cbAtualizarGeladeira.UseVisualStyleBackColor = true;
+            // 
+            // cbAtualizarVeiculos
+            // 
+            this.cbAtualizarVeiculos.AutoSize = true;
+            this.cbAtualizarVeiculos.Location = new System.Drawing.Point(10, 29);
+            this.cbAtualizarVeiculos.Name = "cbAtualizarVeiculos";
+            this.cbAtualizarVeiculos.Size = new System.Drawing.Size(99, 29);
+            this.cbAtualizarVeiculos.TabIndex = 0;
+            this.cbAtualizarVeiculos.Text = "Veículo";
+            this.cbAtualizarVeiculos.UseVisualStyleBackColor = true;
+            // 
+            // gbAtualizarFumante
+            // 
+            this.gbAtualizarFumante.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.gbAtualizarFumante.Controls.Add(this.rbAtualizarFumanteSim);
+            this.gbAtualizarFumante.Controls.Add(this.rbAtualizarFumanteNao);
+            this.gbAtualizarFumante.Location = new System.Drawing.Point(6, 29);
+            this.gbAtualizarFumante.Name = "gbAtualizarFumante";
+            this.gbAtualizarFumante.Size = new System.Drawing.Size(112, 134);
+            this.gbAtualizarFumante.TabIndex = 0;
+            this.gbAtualizarFumante.TabStop = false;
+            this.gbAtualizarFumante.Text = "Fumante";
+            // 
+            // rbAtualizarFumanteSim
+            // 
+            this.rbAtualizarFumanteSim.AutoSize = true;
+            this.rbAtualizarFumanteSim.Location = new System.Drawing.Point(18, 90);
+            this.rbAtualizarFumanteSim.Name = "rbAtualizarFumanteSim";
+            this.rbAtualizarFumanteSim.Size = new System.Drawing.Size(64, 29);
+            this.rbAtualizarFumanteSim.TabIndex = 1;
+            this.rbAtualizarFumanteSim.TabStop = true;
+            this.rbAtualizarFumanteSim.Text = "Sim";
+            this.rbAtualizarFumanteSim.UseVisualStyleBackColor = true;
+            // 
+            // rbAtualizarFumanteNao
+            // 
+            this.rbAtualizarFumanteNao.AutoSize = true;
+            this.rbAtualizarFumanteNao.Location = new System.Drawing.Point(16, 51);
+            this.rbAtualizarFumanteNao.Name = "rbAtualizarFumanteNao";
+            this.rbAtualizarFumanteNao.Size = new System.Drawing.Size(68, 29);
+            this.rbAtualizarFumanteNao.TabIndex = 0;
+            this.rbAtualizarFumanteNao.TabStop = true;
+            this.rbAtualizarFumanteNao.Text = "Não";
+            this.rbAtualizarFumanteNao.UseVisualStyleBackColor = true;
+            // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Location = new System.Drawing.Point(736, 346);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(174, 35);
+            this.btnAtualizar.TabIndex = 4;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 27F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
@@ -660,6 +1005,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.gbBuscarFumante.ResumeLayout(false);
             this.gbBuscarFumante.PerformLayout();
+            this.tpAtualizar.ResumeLayout(false);
+            this.gbAtualizarNome.ResumeLayout(false);
+            this.gbAtualizarNome.PerformLayout();
+            this.gbAtualizarOutrasInformacoes.ResumeLayout(false);
+            this.gbAtualizarPropriedades.ResumeLayout(false);
+            this.gbAtualizarPropriedades.PerformLayout();
+            this.gbAtualizarFumante.ResumeLayout(false);
+            this.gbAtualizarFumante.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -719,6 +1072,36 @@
         private System.Windows.Forms.RadioButton rbBuscarFumanteSim;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.Button btnAtualizar;
+        private System.Windows.Forms.GroupBox gbAtualizarOutrasInformacoes;
+        private System.Windows.Forms.GroupBox gbAtualizarPropriedades;
+        private System.Windows.Forms.CheckBox cbAtualizarTablet;
+        private System.Windows.Forms.CheckBox cbAtualizarCelular;
+        private System.Windows.Forms.CheckBox cbAtualizarInternet;
+        private System.Windows.Forms.CheckBox cbAtualizarNotebook;
+        private System.Windows.Forms.CheckBox cbAtualizarComputadorDesktop;
+        private System.Windows.Forms.CheckBox cbAtualizarServicoStreaming;
+        private System.Windows.Forms.CheckBox cbAtualizarTVassinatura;
+        private System.Windows.Forms.CheckBox cbAtualizarGeladeira;
+        private System.Windows.Forms.CheckBox cbAtualizarVeiculos;
+        private System.Windows.Forms.GroupBox gbAtualizarFumante;
+        private System.Windows.Forms.RadioButton rbAtualizarFumanteSim;
+        private System.Windows.Forms.RadioButton rbAtualizarFumanteNao;
+        private System.Windows.Forms.GroupBox gbAtualizarNome;
+        private System.Windows.Forms.MaskedTextBox mtbAtualizarDataNascimento;
+        private System.Windows.Forms.Label lblAtualizarDataNascimento;
+        private System.Windows.Forms.MaskedTextBox mtbAtualizarTelefone;
+        private System.Windows.Forms.ComboBox cbAtualizarSexo;
+        private System.Windows.Forms.Label lblAtualizarSexo;
+        private System.Windows.Forms.Label lblAtualizarTelefone;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblAtualizarCidade;
+        private System.Windows.Forms.TextBox txtAtualizarBairro;
+        private System.Windows.Forms.Label lblAtualizarBairro;
+        private System.Windows.Forms.TextBox txtAtualizarEndereco;
+        private System.Windows.Forms.Label lblAtualizarEndereco;
+        private System.Windows.Forms.TextBox txtAtualizarNome;
+        private System.Windows.Forms.Label lblAtualizarNome;
     }
 }
 

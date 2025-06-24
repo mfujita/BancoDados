@@ -85,11 +85,10 @@ C:\github3BancoDados\Csharp\AulaBancoDeDados\AulaBancoDeDados\bin\Debug\System.N
 C:\github3BancoDados\Csharp\AulaBancoDeDados\AulaBancoDeDados\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\github3BancoDados\Csharp\AulaBancoDeDados\AulaBancoDeDados\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\github3BancoDados\Csharp\AulaBancoDeDados\AulaBancoDeDados\obj\Debug\AulaBancoDeDados.csproj.AssemblyReference.cache
-C:\github3BancoDados\Csharp\AulaBancoDeDados\AulaBancoDeDados\obj\Debug\AulaBancoDeDados.csproj.SuggestedBindingRedirects.cache
 C:\github3BancoDados\Csharp\AulaBancoDeDados\AulaBancoDeDados\obj\Debug\AulaBancoDeDados.Form1.resources
 C:\github3BancoDados\Csharp\AulaBancoDeDados\AulaBancoDeDados\obj\Debug\AulaBancoDeDados.Properties.Resources.resources
 C:\github3BancoDados\Csharp\AulaBancoDeDados\AulaBancoDeDados\obj\Debug\AulaBancoDeDados.csproj.GenerateResource.cache
 C:\github3BancoDados\Csharp\AulaBancoDeDados\AulaBancoDeDados\obj\Debug\AulaBancoDeDados.csproj.CoreCompileInputs.cache
-C:\github3BancoDados\Csharp\AulaBancoDeDados\AulaBancoDeDados\obj\Debug\AulaBancoDeDados.csproj.CopyComplete
 C:\github3BancoDados\Csharp\AulaBancoDeDados\AulaBancoDeDados\obj\Debug\AulaBancoDeDados.exe
 C:\github3BancoDados\Csharp\AulaBancoDeDados\AulaBancoDeDados\obj\Debug\AulaBancoDeDados.pdb
+C:\github3BancoDados\Csharp\AulaBancoDeDados\AulaBancoDeDados\obj\Debug\AulaBanc.33B7D351.Up2Date
