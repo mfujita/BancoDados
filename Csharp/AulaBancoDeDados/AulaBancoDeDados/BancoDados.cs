@@ -52,7 +52,6 @@ namespace AulaBancoDeDados
 
         public DataTable Buscar(string name, string endereco, string bairro, string cidade, string telefone, String sexo, string nascimento)
         {
-            
             try
             {
                 string sql = "SELECT * FROM bd1 where nome like '%" + name + "%'";
@@ -82,6 +81,27 @@ namespace AulaBancoDeDados
                 //    bool fum = reader.GetBoolean(8);
                 //    string prop = reader.GetString(9);
                 //}
+                dt.Load(reader);
+                reader.Close();
+                conn.Close();
+                return dt;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public DataTable Atualizar(int index)
+        {
+            try
+            {
+                string sql = "SELECT * FROM bd1 WHERE id=" + index + ";";
+                DataTable dt = new DataTable();
+                MySqlConnection conn = new MySqlConnection(stringConnection);
+                conn.Open();
+                MySqlCommand command = new MySqlCommand(sql, conn);
+                MySqlDataReader reader = command.ExecuteReader();
                 dt.Load(reader);
                 reader.Close();
                 conn.Close();

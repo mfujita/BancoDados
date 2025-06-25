@@ -58,9 +58,9 @@
             this.rbFumanteSim = new System.Windows.Forms.RadioButton();
             this.rbFumanteNao = new System.Windows.Forms.RadioButton();
             this.tab = new System.Windows.Forms.TabControl();
-            this.tpCadastrar = new System.Windows.Forms.TabPage();
+            this.tcCadastrar = new System.Windows.Forms.TabPage();
             this.btnEnviar = new System.Windows.Forms.Button();
-            this.tpBuscar = new System.Windows.Forms.TabPage();
+            this.tcBuscar = new System.Windows.Forms.TabPage();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.cbBuscarSexo = new System.Windows.Forms.ComboBox();
@@ -79,23 +79,8 @@
             this.txtBuscarEndereco = new System.Windows.Forms.TextBox();
             this.txtBuscarNome = new System.Windows.Forms.TextBox();
             this.lblBuscarNome = new System.Windows.Forms.Label();
-            this.tpAtualizar = new System.Windows.Forms.TabPage();
-            this.tpDeletar = new System.Windows.Forms.TabPage();
-            this.gbAtualizarNome = new System.Windows.Forms.GroupBox();
-            this.mtbAtualizarDataNascimento = new System.Windows.Forms.MaskedTextBox();
-            this.lblAtualizarDataNascimento = new System.Windows.Forms.Label();
-            this.mtbAtualizarTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.cbAtualizarSexo = new System.Windows.Forms.ComboBox();
-            this.lblAtualizarSexo = new System.Windows.Forms.Label();
-            this.lblAtualizarTelefone = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblAtualizarCidade = new System.Windows.Forms.Label();
-            this.txtAtualizarBairro = new System.Windows.Forms.TextBox();
-            this.lblAtualizarBairro = new System.Windows.Forms.Label();
-            this.txtAtualizarEndereco = new System.Windows.Forms.TextBox();
-            this.lblAtualizarEndereco = new System.Windows.Forms.Label();
-            this.txtAtualizarNome = new System.Windows.Forms.TextBox();
-            this.lblAtualizarNome = new System.Windows.Forms.Label();
+            this.tcAtualizar = new System.Windows.Forms.TabPage();
+            this.btnAtualizar = new System.Windows.Forms.Button();
             this.gbAtualizarOutrasInformacoes = new System.Windows.Forms.GroupBox();
             this.gbAtualizarPropriedades = new System.Windows.Forms.GroupBox();
             this.cbAtualizarTablet = new System.Windows.Forms.CheckBox();
@@ -110,21 +95,36 @@
             this.gbAtualizarFumante = new System.Windows.Forms.GroupBox();
             this.rbAtualizarFumanteSim = new System.Windows.Forms.RadioButton();
             this.rbAtualizarFumanteNao = new System.Windows.Forms.RadioButton();
-            this.btnAtualizar = new System.Windows.Forms.Button();
+            this.gbAtualizarNome = new System.Windows.Forms.GroupBox();
+            this.mtbAtualizarDataNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.lblAtualizarDataNascimento = new System.Windows.Forms.Label();
+            this.mtbAtualizarTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.cbAtualizarSexo = new System.Windows.Forms.ComboBox();
+            this.lblAtualizarSexo = new System.Windows.Forms.Label();
+            this.lblAtualizarTelefone = new System.Windows.Forms.Label();
+            this.txtAtualizarCidade = new System.Windows.Forms.TextBox();
+            this.lblAtualizarCidade = new System.Windows.Forms.Label();
+            this.txtAtualizarBairro = new System.Windows.Forms.TextBox();
+            this.lblAtualizarBairro = new System.Windows.Forms.Label();
+            this.txtAtualizarEndereco = new System.Windows.Forms.TextBox();
+            this.lblAtualizarEndereco = new System.Windows.Forms.Label();
+            this.txtAtualizarNome = new System.Windows.Forms.TextBox();
+            this.lblAtualizarNome = new System.Windows.Forms.Label();
+            this.tcDeletar = new System.Windows.Forms.TabPage();
             this.gbDadosPessoais.SuspendLayout();
             this.gbOutrasInformacoes.SuspendLayout();
             this.gbPertences.SuspendLayout();
             this.bgFumante.SuspendLayout();
             this.tab.SuspendLayout();
-            this.tpCadastrar.SuspendLayout();
-            this.tpBuscar.SuspendLayout();
+            this.tcCadastrar.SuspendLayout();
+            this.tcBuscar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.gbBuscarFumante.SuspendLayout();
-            this.tpAtualizar.SuspendLayout();
-            this.gbAtualizarNome.SuspendLayout();
+            this.tcAtualizar.SuspendLayout();
             this.gbAtualizarOutrasInformacoes.SuspendLayout();
             this.gbAtualizarPropriedades.SuspendLayout();
             this.gbAtualizarFumante.SuspendLayout();
+            this.gbAtualizarNome.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNomeCompleto
@@ -430,28 +430,28 @@
             this.tab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tab.Controls.Add(this.tpCadastrar);
-            this.tab.Controls.Add(this.tpBuscar);
-            this.tab.Controls.Add(this.tpAtualizar);
-            this.tab.Controls.Add(this.tpDeletar);
+            this.tab.Controls.Add(this.tcCadastrar);
+            this.tab.Controls.Add(this.tcBuscar);
+            this.tab.Controls.Add(this.tcAtualizar);
+            this.tab.Controls.Add(this.tcDeletar);
             this.tab.Location = new System.Drawing.Point(12, 12);
             this.tab.Name = "tab";
             this.tab.SelectedIndex = 0;
             this.tab.Size = new System.Drawing.Size(993, 428);
             this.tab.TabIndex = 3;
             // 
-            // tpCadastrar
+            // tcCadastrar
             // 
-            this.tpCadastrar.Controls.Add(this.btnEnviar);
-            this.tpCadastrar.Controls.Add(this.gbDadosPessoais);
-            this.tpCadastrar.Controls.Add(this.gbOutrasInformacoes);
-            this.tpCadastrar.Location = new System.Drawing.Point(4, 33);
-            this.tpCadastrar.Name = "tpCadastrar";
-            this.tpCadastrar.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCadastrar.Size = new System.Drawing.Size(985, 391);
-            this.tpCadastrar.TabIndex = 0;
-            this.tpCadastrar.Text = "Cadastrar";
-            this.tpCadastrar.UseVisualStyleBackColor = true;
+            this.tcCadastrar.Controls.Add(this.btnEnviar);
+            this.tcCadastrar.Controls.Add(this.gbDadosPessoais);
+            this.tcCadastrar.Controls.Add(this.gbOutrasInformacoes);
+            this.tcCadastrar.Location = new System.Drawing.Point(4, 33);
+            this.tcCadastrar.Name = "tcCadastrar";
+            this.tcCadastrar.Padding = new System.Windows.Forms.Padding(3);
+            this.tcCadastrar.Size = new System.Drawing.Size(985, 391);
+            this.tcCadastrar.TabIndex = 0;
+            this.tcCadastrar.Text = "Cadastrar";
+            this.tcCadastrar.UseVisualStyleBackColor = true;
             // 
             // btnEnviar
             // 
@@ -463,30 +463,30 @@
             this.btnEnviar.UseVisualStyleBackColor = true;
             this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
-            // tpBuscar
+            // tcBuscar
             // 
-            this.tpBuscar.Controls.Add(this.dgv);
-            this.tpBuscar.Controls.Add(this.btnBuscar);
-            this.tpBuscar.Controls.Add(this.cbBuscarSexo);
-            this.tpBuscar.Controls.Add(this.gbBuscarFumante);
-            this.tpBuscar.Controls.Add(this.mtbBuscarNascimento);
-            this.tpBuscar.Controls.Add(this.lblBuscarNascimento);
-            this.tpBuscar.Controls.Add(this.mtbBuscarTelefone);
-            this.tpBuscar.Controls.Add(this.lblBuscarTelefone);
-            this.tpBuscar.Controls.Add(this.txtBuscarCidade);
-            this.tpBuscar.Controls.Add(this.lblBuscarBairro);
-            this.tpBuscar.Controls.Add(this.lblBuscarCidade);
-            this.tpBuscar.Controls.Add(this.txtBuscarBairro);
-            this.tpBuscar.Controls.Add(this.lblBuscarEndereco);
-            this.tpBuscar.Controls.Add(this.txtBuscarEndereco);
-            this.tpBuscar.Controls.Add(this.txtBuscarNome);
-            this.tpBuscar.Controls.Add(this.lblBuscarNome);
-            this.tpBuscar.Location = new System.Drawing.Point(4, 33);
-            this.tpBuscar.Name = "tpBuscar";
-            this.tpBuscar.Size = new System.Drawing.Size(985, 391);
-            this.tpBuscar.TabIndex = 3;
-            this.tpBuscar.Text = "Buscar";
-            this.tpBuscar.UseVisualStyleBackColor = true;
+            this.tcBuscar.Controls.Add(this.dgv);
+            this.tcBuscar.Controls.Add(this.btnBuscar);
+            this.tcBuscar.Controls.Add(this.cbBuscarSexo);
+            this.tcBuscar.Controls.Add(this.gbBuscarFumante);
+            this.tcBuscar.Controls.Add(this.mtbBuscarNascimento);
+            this.tcBuscar.Controls.Add(this.lblBuscarNascimento);
+            this.tcBuscar.Controls.Add(this.mtbBuscarTelefone);
+            this.tcBuscar.Controls.Add(this.lblBuscarTelefone);
+            this.tcBuscar.Controls.Add(this.txtBuscarCidade);
+            this.tcBuscar.Controls.Add(this.lblBuscarBairro);
+            this.tcBuscar.Controls.Add(this.lblBuscarCidade);
+            this.tcBuscar.Controls.Add(this.txtBuscarBairro);
+            this.tcBuscar.Controls.Add(this.lblBuscarEndereco);
+            this.tcBuscar.Controls.Add(this.txtBuscarEndereco);
+            this.tcBuscar.Controls.Add(this.txtBuscarNome);
+            this.tcBuscar.Controls.Add(this.lblBuscarNome);
+            this.tcBuscar.Location = new System.Drawing.Point(4, 33);
+            this.tcBuscar.Name = "tcBuscar";
+            this.tcBuscar.Size = new System.Drawing.Size(985, 391);
+            this.tcBuscar.TabIndex = 3;
+            this.tcBuscar.Text = "Buscar";
+            this.tcBuscar.UseVisualStyleBackColor = true;
             // 
             // dgv
             // 
@@ -649,169 +649,27 @@
             this.lblBuscarNome.TabIndex = 0;
             this.lblBuscarNome.Text = "Nome";
             // 
-            // tpAtualizar
+            // tcAtualizar
             // 
-            this.tpAtualizar.Controls.Add(this.btnAtualizar);
-            this.tpAtualizar.Controls.Add(this.gbAtualizarOutrasInformacoes);
-            this.tpAtualizar.Controls.Add(this.gbAtualizarNome);
-            this.tpAtualizar.Location = new System.Drawing.Point(4, 33);
-            this.tpAtualizar.Name = "tpAtualizar";
-            this.tpAtualizar.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAtualizar.Size = new System.Drawing.Size(985, 391);
-            this.tpAtualizar.TabIndex = 1;
-            this.tpAtualizar.Text = "Atualizar";
-            this.tpAtualizar.UseVisualStyleBackColor = true;
+            this.tcAtualizar.Controls.Add(this.btnAtualizar);
+            this.tcAtualizar.Controls.Add(this.gbAtualizarOutrasInformacoes);
+            this.tcAtualizar.Controls.Add(this.gbAtualizarNome);
+            this.tcAtualizar.Location = new System.Drawing.Point(4, 33);
+            this.tcAtualizar.Name = "tcAtualizar";
+            this.tcAtualizar.Padding = new System.Windows.Forms.Padding(3);
+            this.tcAtualizar.Size = new System.Drawing.Size(985, 391);
+            this.tcAtualizar.TabIndex = 1;
+            this.tcAtualizar.Text = "Atualizar";
+            this.tcAtualizar.UseVisualStyleBackColor = true;
             // 
-            // tpDeletar
+            // btnAtualizar
             // 
-            this.tpDeletar.Location = new System.Drawing.Point(4, 33);
-            this.tpDeletar.Name = "tpDeletar";
-            this.tpDeletar.Size = new System.Drawing.Size(985, 391);
-            this.tpDeletar.TabIndex = 2;
-            this.tpDeletar.Text = "Deletar";
-            this.tpDeletar.UseVisualStyleBackColor = true;
-            // 
-            // gbAtualizarNome
-            // 
-            this.gbAtualizarNome.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.gbAtualizarNome.Controls.Add(this.mtbAtualizarDataNascimento);
-            this.gbAtualizarNome.Controls.Add(this.lblAtualizarDataNascimento);
-            this.gbAtualizarNome.Controls.Add(this.mtbAtualizarTelefone);
-            this.gbAtualizarNome.Controls.Add(this.cbAtualizarSexo);
-            this.gbAtualizarNome.Controls.Add(this.lblAtualizarSexo);
-            this.gbAtualizarNome.Controls.Add(this.lblAtualizarTelefone);
-            this.gbAtualizarNome.Controls.Add(this.textBox1);
-            this.gbAtualizarNome.Controls.Add(this.lblAtualizarCidade);
-            this.gbAtualizarNome.Controls.Add(this.txtAtualizarBairro);
-            this.gbAtualizarNome.Controls.Add(this.lblAtualizarBairro);
-            this.gbAtualizarNome.Controls.Add(this.txtAtualizarEndereco);
-            this.gbAtualizarNome.Controls.Add(this.lblAtualizarEndereco);
-            this.gbAtualizarNome.Controls.Add(this.txtAtualizarNome);
-            this.gbAtualizarNome.Controls.Add(this.lblAtualizarNome);
-            this.gbAtualizarNome.Location = new System.Drawing.Point(6, 6);
-            this.gbAtualizarNome.Name = "gbAtualizarNome";
-            this.gbAtualizarNome.Size = new System.Drawing.Size(904, 194);
-            this.gbAtualizarNome.TabIndex = 2;
-            this.gbAtualizarNome.TabStop = false;
-            this.gbAtualizarNome.Text = "Dados pessoais";
-            // 
-            // mtbAtualizarDataNascimento
-            // 
-            this.mtbAtualizarDataNascimento.Location = new System.Drawing.Point(718, 145);
-            this.mtbAtualizarDataNascimento.Mask = "00/00/0000";
-            this.mtbAtualizarDataNascimento.Name = "mtbAtualizarDataNascimento";
-            this.mtbAtualizarDataNascimento.Size = new System.Drawing.Size(142, 30);
-            this.mtbAtualizarDataNascimento.TabIndex = 6;
-            // 
-            // lblAtualizarDataNascimento
-            // 
-            this.lblAtualizarDataNascimento.AutoSize = true;
-            this.lblAtualizarDataNascimento.Location = new System.Drawing.Point(515, 150);
-            this.lblAtualizarDataNascimento.Name = "lblAtualizarDataNascimento";
-            this.lblAtualizarDataNascimento.Size = new System.Drawing.Size(197, 25);
-            this.lblAtualizarDataNascimento.TabIndex = 13;
-            this.lblAtualizarDataNascimento.Text = "Data de nascimento";
-            // 
-            // mtbAtualizarTelefone
-            // 
-            this.mtbAtualizarTelefone.Location = new System.Drawing.Point(168, 146);
-            this.mtbAtualizarTelefone.Mask = "(00) 00000 0000";
-            this.mtbAtualizarTelefone.Name = "mtbAtualizarTelefone";
-            this.mtbAtualizarTelefone.Size = new System.Drawing.Size(150, 30);
-            this.mtbAtualizarTelefone.TabIndex = 4;
-            // 
-            // cbAtualizarSexo
-            // 
-            this.cbAtualizarSexo.FormattingEnabled = true;
-            this.cbAtualizarSexo.Items.AddRange(new object[] {
-            "Masculino",
-            "Feminino"});
-            this.cbAtualizarSexo.Location = new System.Drawing.Point(386, 146);
-            this.cbAtualizarSexo.Name = "cbAtualizarSexo";
-            this.cbAtualizarSexo.Size = new System.Drawing.Size(121, 32);
-            this.cbAtualizarSexo.TabIndex = 5;
-            // 
-            // lblAtualizarSexo
-            // 
-            this.lblAtualizarSexo.AutoSize = true;
-            this.lblAtualizarSexo.Location = new System.Drawing.Point(324, 148);
-            this.lblAtualizarSexo.Name = "lblAtualizarSexo";
-            this.lblAtualizarSexo.Size = new System.Drawing.Size(56, 25);
-            this.lblAtualizarSexo.TabIndex = 10;
-            this.lblAtualizarSexo.Text = "Sexo";
-            // 
-            // lblAtualizarTelefone
-            // 
-            this.lblAtualizarTelefone.AutoSize = true;
-            this.lblAtualizarTelefone.Location = new System.Drawing.Point(70, 146);
-            this.lblAtualizarTelefone.Name = "lblAtualizarTelefone";
-            this.lblAtualizarTelefone.Size = new System.Drawing.Size(92, 25);
-            this.lblAtualizarTelefone.TabIndex = 8;
-            this.lblAtualizarTelefone.Text = "Telefone";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(588, 107);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 30);
-            this.textBox1.TabIndex = 3;
-            // 
-            // lblAtualizarCidade
-            // 
-            this.lblAtualizarCidade.AutoSize = true;
-            this.lblAtualizarCidade.Location = new System.Drawing.Point(513, 110);
-            this.lblAtualizarCidade.Name = "lblAtualizarCidade";
-            this.lblAtualizarCidade.Size = new System.Drawing.Size(76, 25);
-            this.lblAtualizarCidade.TabIndex = 6;
-            this.lblAtualizarCidade.Text = "Cidade";
-            // 
-            // txtAtualizarBairro
-            // 
-            this.txtAtualizarBairro.Location = new System.Drawing.Point(168, 110);
-            this.txtAtualizarBairro.Name = "txtAtualizarBairro";
-            this.txtAtualizarBairro.Size = new System.Drawing.Size(339, 30);
-            this.txtAtualizarBairro.TabIndex = 2;
-            // 
-            // lblAtualizarBairro
-            // 
-            this.lblAtualizarBairro.AutoSize = true;
-            this.lblAtualizarBairro.Location = new System.Drawing.Point(101, 110);
-            this.lblAtualizarBairro.Name = "lblAtualizarBairro";
-            this.lblAtualizarBairro.Size = new System.Drawing.Size(66, 25);
-            this.lblAtualizarBairro.TabIndex = 4;
-            this.lblAtualizarBairro.Text = "Bairro";
-            // 
-            // txtAtualizarEndereco
-            // 
-            this.txtAtualizarEndereco.Location = new System.Drawing.Point(168, 73);
-            this.txtAtualizarEndereco.Name = "txtAtualizarEndereco";
-            this.txtAtualizarEndereco.Size = new System.Drawing.Size(692, 30);
-            this.txtAtualizarEndereco.TabIndex = 1;
-            // 
-            // lblAtualizarEndereco
-            // 
-            this.lblAtualizarEndereco.AutoSize = true;
-            this.lblAtualizarEndereco.Location = new System.Drawing.Point(70, 76);
-            this.lblAtualizarEndereco.Name = "lblAtualizarEndereco";
-            this.lblAtualizarEndereco.Size = new System.Drawing.Size(97, 25);
-            this.lblAtualizarEndereco.TabIndex = 2;
-            this.lblAtualizarEndereco.Text = "Endereço";
-            // 
-            // txtAtualizarNome
-            // 
-            this.txtAtualizarNome.Location = new System.Drawing.Point(168, 33);
-            this.txtAtualizarNome.Name = "txtAtualizarNome";
-            this.txtAtualizarNome.Size = new System.Drawing.Size(693, 30);
-            this.txtAtualizarNome.TabIndex = 0;
-            // 
-            // lblAtualizarNome
-            // 
-            this.lblAtualizarNome.AutoSize = true;
-            this.lblAtualizarNome.Location = new System.Drawing.Point(6, 36);
-            this.lblAtualizarNome.Name = "lblAtualizarNome";
-            this.lblAtualizarNome.Size = new System.Drawing.Size(161, 25);
-            this.lblAtualizarNome.TabIndex = 0;
-            this.lblAtualizarNome.Text = "Nome completo";
+            this.btnAtualizar.Location = new System.Drawing.Point(736, 346);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(174, 35);
+            this.btnAtualizar.TabIndex = 4;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
             // 
             // gbAtualizarOutrasInformacoes
             // 
@@ -969,14 +827,156 @@
             this.rbAtualizarFumanteNao.Text = "Não";
             this.rbAtualizarFumanteNao.UseVisualStyleBackColor = true;
             // 
-            // btnAtualizar
+            // gbAtualizarNome
             // 
-            this.btnAtualizar.Location = new System.Drawing.Point(736, 346);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(174, 35);
-            this.btnAtualizar.TabIndex = 4;
-            this.btnAtualizar.Text = "Atualizar";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.gbAtualizarNome.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.gbAtualizarNome.Controls.Add(this.mtbAtualizarDataNascimento);
+            this.gbAtualizarNome.Controls.Add(this.lblAtualizarDataNascimento);
+            this.gbAtualizarNome.Controls.Add(this.mtbAtualizarTelefone);
+            this.gbAtualizarNome.Controls.Add(this.cbAtualizarSexo);
+            this.gbAtualizarNome.Controls.Add(this.lblAtualizarSexo);
+            this.gbAtualizarNome.Controls.Add(this.lblAtualizarTelefone);
+            this.gbAtualizarNome.Controls.Add(this.txtAtualizarCidade);
+            this.gbAtualizarNome.Controls.Add(this.lblAtualizarCidade);
+            this.gbAtualizarNome.Controls.Add(this.txtAtualizarBairro);
+            this.gbAtualizarNome.Controls.Add(this.lblAtualizarBairro);
+            this.gbAtualizarNome.Controls.Add(this.txtAtualizarEndereco);
+            this.gbAtualizarNome.Controls.Add(this.lblAtualizarEndereco);
+            this.gbAtualizarNome.Controls.Add(this.txtAtualizarNome);
+            this.gbAtualizarNome.Controls.Add(this.lblAtualizarNome);
+            this.gbAtualizarNome.Location = new System.Drawing.Point(6, 6);
+            this.gbAtualizarNome.Name = "gbAtualizarNome";
+            this.gbAtualizarNome.Size = new System.Drawing.Size(904, 194);
+            this.gbAtualizarNome.TabIndex = 2;
+            this.gbAtualizarNome.TabStop = false;
+            this.gbAtualizarNome.Text = "Dados pessoais";
+            // 
+            // mtbAtualizarDataNascimento
+            // 
+            this.mtbAtualizarDataNascimento.Location = new System.Drawing.Point(718, 145);
+            this.mtbAtualizarDataNascimento.Mask = "00/00/0000";
+            this.mtbAtualizarDataNascimento.Name = "mtbAtualizarDataNascimento";
+            this.mtbAtualizarDataNascimento.Size = new System.Drawing.Size(142, 30);
+            this.mtbAtualizarDataNascimento.TabIndex = 6;
+            // 
+            // lblAtualizarDataNascimento
+            // 
+            this.lblAtualizarDataNascimento.AutoSize = true;
+            this.lblAtualizarDataNascimento.Location = new System.Drawing.Point(515, 150);
+            this.lblAtualizarDataNascimento.Name = "lblAtualizarDataNascimento";
+            this.lblAtualizarDataNascimento.Size = new System.Drawing.Size(197, 25);
+            this.lblAtualizarDataNascimento.TabIndex = 13;
+            this.lblAtualizarDataNascimento.Text = "Data de nascimento";
+            // 
+            // mtbAtualizarTelefone
+            // 
+            this.mtbAtualizarTelefone.Location = new System.Drawing.Point(168, 146);
+            this.mtbAtualizarTelefone.Mask = "(00) 00000 0000";
+            this.mtbAtualizarTelefone.Name = "mtbAtualizarTelefone";
+            this.mtbAtualizarTelefone.Size = new System.Drawing.Size(150, 30);
+            this.mtbAtualizarTelefone.TabIndex = 4;
+            // 
+            // cbAtualizarSexo
+            // 
+            this.cbAtualizarSexo.FormattingEnabled = true;
+            this.cbAtualizarSexo.Items.AddRange(new object[] {
+            "Masculino",
+            "Feminino"});
+            this.cbAtualizarSexo.Location = new System.Drawing.Point(386, 146);
+            this.cbAtualizarSexo.Name = "cbAtualizarSexo";
+            this.cbAtualizarSexo.Size = new System.Drawing.Size(121, 32);
+            this.cbAtualizarSexo.TabIndex = 5;
+            // 
+            // lblAtualizarSexo
+            // 
+            this.lblAtualizarSexo.AutoSize = true;
+            this.lblAtualizarSexo.Location = new System.Drawing.Point(324, 148);
+            this.lblAtualizarSexo.Name = "lblAtualizarSexo";
+            this.lblAtualizarSexo.Size = new System.Drawing.Size(56, 25);
+            this.lblAtualizarSexo.TabIndex = 10;
+            this.lblAtualizarSexo.Text = "Sexo";
+            // 
+            // lblAtualizarTelefone
+            // 
+            this.lblAtualizarTelefone.AutoSize = true;
+            this.lblAtualizarTelefone.Location = new System.Drawing.Point(70, 146);
+            this.lblAtualizarTelefone.Name = "lblAtualizarTelefone";
+            this.lblAtualizarTelefone.Size = new System.Drawing.Size(92, 25);
+            this.lblAtualizarTelefone.TabIndex = 8;
+            this.lblAtualizarTelefone.Text = "Telefone";
+            // 
+            // txtAtualizarCidade
+            // 
+            this.txtAtualizarCidade.Location = new System.Drawing.Point(588, 107);
+            this.txtAtualizarCidade.Name = "txtAtualizarCidade";
+            this.txtAtualizarCidade.Size = new System.Drawing.Size(272, 30);
+            this.txtAtualizarCidade.TabIndex = 3;
+            // 
+            // lblAtualizarCidade
+            // 
+            this.lblAtualizarCidade.AutoSize = true;
+            this.lblAtualizarCidade.Location = new System.Drawing.Point(513, 110);
+            this.lblAtualizarCidade.Name = "lblAtualizarCidade";
+            this.lblAtualizarCidade.Size = new System.Drawing.Size(76, 25);
+            this.lblAtualizarCidade.TabIndex = 6;
+            this.lblAtualizarCidade.Text = "Cidade";
+            // 
+            // txtAtualizarBairro
+            // 
+            this.txtAtualizarBairro.Location = new System.Drawing.Point(168, 110);
+            this.txtAtualizarBairro.Name = "txtAtualizarBairro";
+            this.txtAtualizarBairro.Size = new System.Drawing.Size(339, 30);
+            this.txtAtualizarBairro.TabIndex = 2;
+            // 
+            // lblAtualizarBairro
+            // 
+            this.lblAtualizarBairro.AutoSize = true;
+            this.lblAtualizarBairro.Location = new System.Drawing.Point(101, 110);
+            this.lblAtualizarBairro.Name = "lblAtualizarBairro";
+            this.lblAtualizarBairro.Size = new System.Drawing.Size(66, 25);
+            this.lblAtualizarBairro.TabIndex = 4;
+            this.lblAtualizarBairro.Text = "Bairro";
+            // 
+            // txtAtualizarEndereco
+            // 
+            this.txtAtualizarEndereco.Location = new System.Drawing.Point(168, 71);
+            this.txtAtualizarEndereco.Name = "txtAtualizarEndereco";
+            this.txtAtualizarEndereco.Size = new System.Drawing.Size(692, 30);
+            this.txtAtualizarEndereco.TabIndex = 1;
+            // 
+            // lblAtualizarEndereco
+            // 
+            this.lblAtualizarEndereco.AutoSize = true;
+            this.lblAtualizarEndereco.Location = new System.Drawing.Point(70, 76);
+            this.lblAtualizarEndereco.Name = "lblAtualizarEndereco";
+            this.lblAtualizarEndereco.Size = new System.Drawing.Size(97, 25);
+            this.lblAtualizarEndereco.TabIndex = 2;
+            this.lblAtualizarEndereco.Text = "Endereço";
+            // 
+            // txtAtualizarNome
+            // 
+            this.txtAtualizarNome.Location = new System.Drawing.Point(168, 33);
+            this.txtAtualizarNome.Name = "txtAtualizarNome";
+            this.txtAtualizarNome.Size = new System.Drawing.Size(693, 30);
+            this.txtAtualizarNome.TabIndex = 0;
+            // 
+            // lblAtualizarNome
+            // 
+            this.lblAtualizarNome.AutoSize = true;
+            this.lblAtualizarNome.Location = new System.Drawing.Point(6, 36);
+            this.lblAtualizarNome.Name = "lblAtualizarNome";
+            this.lblAtualizarNome.Size = new System.Drawing.Size(161, 25);
+            this.lblAtualizarNome.TabIndex = 0;
+            this.lblAtualizarNome.Text = "Nome completo";
+            // 
+            // tcDeletar
+            // 
+            this.tcDeletar.Location = new System.Drawing.Point(4, 33);
+            this.tcDeletar.Name = "tcDeletar";
+            this.tcDeletar.Size = new System.Drawing.Size(985, 391);
+            this.tcDeletar.TabIndex = 2;
+            this.tcDeletar.Text = "Deletar";
+            this.tcDeletar.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -999,20 +999,20 @@
             this.bgFumante.ResumeLayout(false);
             this.bgFumante.PerformLayout();
             this.tab.ResumeLayout(false);
-            this.tpCadastrar.ResumeLayout(false);
-            this.tpBuscar.ResumeLayout(false);
-            this.tpBuscar.PerformLayout();
+            this.tcCadastrar.ResumeLayout(false);
+            this.tcBuscar.ResumeLayout(false);
+            this.tcBuscar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.gbBuscarFumante.ResumeLayout(false);
             this.gbBuscarFumante.PerformLayout();
-            this.tpAtualizar.ResumeLayout(false);
-            this.gbAtualizarNome.ResumeLayout(false);
-            this.gbAtualizarNome.PerformLayout();
+            this.tcAtualizar.ResumeLayout(false);
             this.gbAtualizarOutrasInformacoes.ResumeLayout(false);
             this.gbAtualizarPropriedades.ResumeLayout(false);
             this.gbAtualizarPropriedades.PerformLayout();
             this.gbAtualizarFumante.ResumeLayout(false);
             this.gbAtualizarFumante.PerformLayout();
+            this.gbAtualizarNome.ResumeLayout(false);
+            this.gbAtualizarNome.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1036,14 +1036,14 @@
         private System.Windows.Forms.MaskedTextBox mtbTelefone;
         private System.Windows.Forms.GroupBox gbOutrasInformacoes;
         private System.Windows.Forms.TabControl tab;
-        private System.Windows.Forms.TabPage tpCadastrar;
-        private System.Windows.Forms.TabPage tpAtualizar;
+        private System.Windows.Forms.TabPage tcCadastrar;
+        private System.Windows.Forms.TabPage tcAtualizar;
         private System.Windows.Forms.GroupBox bgFumante;
         private System.Windows.Forms.RadioButton rbFumanteSim;
         private System.Windows.Forms.RadioButton rbFumanteNao;
         private System.Windows.Forms.GroupBox gbPertences;
         private System.Windows.Forms.CheckBox cbItensVeiculo;
-        private System.Windows.Forms.TabPage tpDeletar;
+        private System.Windows.Forms.TabPage tcDeletar;
         private System.Windows.Forms.CheckBox cbItensGeladeira;
         private System.Windows.Forms.CheckBox cbItensNotebook;
         private System.Windows.Forms.CheckBox cbItensComputadorDesktop;
@@ -1053,7 +1053,7 @@
         private System.Windows.Forms.CheckBox cbItensTablet;
         private System.Windows.Forms.CheckBox cbItensCelular;
         private System.Windows.Forms.Button btnEnviar;
-        private System.Windows.Forms.TabPage tpBuscar;
+        private System.Windows.Forms.TabPage tcBuscar;
         private System.Windows.Forms.Label lblBuscarBairro;
         private System.Windows.Forms.Label lblBuscarCidade;
         private System.Windows.Forms.TextBox txtBuscarBairro;
@@ -1094,7 +1094,7 @@
         private System.Windows.Forms.ComboBox cbAtualizarSexo;
         private System.Windows.Forms.Label lblAtualizarSexo;
         private System.Windows.Forms.Label lblAtualizarTelefone;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAtualizarCidade;
         private System.Windows.Forms.Label lblAtualizarCidade;
         private System.Windows.Forms.TextBox txtAtualizarBairro;
         private System.Windows.Forms.Label lblAtualizarBairro;

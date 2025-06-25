@@ -55,6 +55,54 @@ namespace AulaBancoDeDados
             //dgv.Columns[7].Width = 300;
             //dgv.Columns[8].Width = 300;
             //dgv.Columns[9].Width = 300;
+
+//https://stackoverflow.com/questions/1027360/datagridview-capturing-user-row-selection
+            dgv.CellClick += Dgv_CellClick;
+
+            //MessageBox.Show(tcAtualizar.);
+
+            foreach (Control control in tab.TabPages[2].Controls)
+            {
+                MessageBox.Show(control.Text);
+            }
+        }
+
+        private void Dgv_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indice = Convert.ToInt32((dgv.SelectedCells[e.RowIndex].Value));
+            BancoDados bd = new BancoDados();
+            DataTable dt = bd.Atualizar(indice);
+            
+            txtAtualizarNome.Text = dt.Rows[0][1].ToString();
+            txtAtualizarEndereco.Text= dt.Rows[0][2].ToString();
+            txtAtualizarBairro.Text = dt.Rows[0][3].ToString();
+            txtAtualizarCidade.Text = dt.Rows[0][4].ToString();
+            mtbAtualizarTelefone.Text = dt.Rows[0][5].ToString();
+            cbAtualizarSexo.Text = dt.Rows[0][6].ToString();
+            mtbAtualizarDataNascimento.Text = dt.Rows[0][7].ToString();
+            if (Convert.ToBoolean(dt.Rows[0][8]))
+                rbAtualizarFumanteSim.Checked = true;
+            else
+                rbAtualizarFumanteNao.Checked = true;
+
+            string posses = dt.Rows[0][9].ToString();
+            string[] cam = posses.Split('|');
+            //for (int i = 0; i < cam.Length; i++)
+            //{
+            foreach (Control control in tab.TabPages[2].Controls)
+            {
+                //if ()
+            }
+            //}
+            //if (cam[0] == cbAtualizarVeiculos.Text) { cbAtualizarVeiculos.Checked = true; }
+            //if (cam[1] == cbAtualizarGeladeira.Text) { cbAtualizarVeiculos.Checked = true; }
+            //if (cam[2] == cbAtualizarInternet.Text) { cbAtualizarInternet.Checked = true; }
+            //if (cam[3] == cbAtualizarTVassinatura.Text) { cbAtualizarTVassinatura.Checked = true; }
+            //if (cam[4] == cbAtualizarServicoStreaming.Text) { cbAtualizarServicoStreaming.Checked = true; }
+            //if (cam[5] == cbAtualizarComputadorDesktop.Text) { cbAtualizarComputadorDesktop.Checked = true; }
+            //if (cam[6] == cbAtualizarNotebook.Text) { cbAtualizarNotebook.Checked = true; }
+            //if (cam[7] == cbAtualizarCelular.Text) { cbAtualizarCelular.Checked = true; }
+            //if (cam[8] == cbAtualizarTablet.Text) { cbAtualizarTablet.Checked = true; }
         }
 
         private void btnEnviar_Click(object sender, EventArgs e)
@@ -114,53 +162,8 @@ namespace AulaBancoDeDados
 
             dgv.Controls.Clear();
 
-            //int qtdeColunas = dt.Columns.Count;
-            //int qtdeLinhas = dt.Rows.Count;
-            //dgv.ColumnCount = dt.Columns.Count; //qtdeColunas;
-            //dgv.RowCount = dt.Rows.Count; //qtdeLinhas;
-
             dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.Aqua;
             dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-
-            //dgv.Columns[0].Name = "ID";
-            //dgv.Columns[0].HeaderText = "ID";
-            //dgv.Columns[0].DataPropertyName = "ID";
-
-            //dgv.Columns[0].Name = "nome";
-            //dgv.Columns[0].HeaderText = "Nome";
-            //dgv.Columns[0].DataPropertyName = "nome";
-
-            //dgv.Columns[0].Name = "endereco";
-            //dgv.Columns[0].HeaderText = "endereco";
-            //dgv.Columns[0].DataPropertyName = "endereco";
-
-            //dgv.Columns[0].Name = "bairro";
-            //dgv.Columns[0].HeaderText = "bairro";
-            //dgv.Columns[0].DataPropertyName = "bairro";
-
-            //dgv.Columns[0].Name = "cidade";
-            //dgv.Columns[0].HeaderText = "cidade";
-            //dgv.Columns[0].DataPropertyName = "cidade";
-
-            //dgv.Columns[0].Name = "telefone";
-            //dgv.Columns[0].HeaderText = "telefone";
-            //dgv.Columns[0].DataPropertyName = "telefone";
-
-            //dgv.Columns[0].Name = "sexo";
-            //dgv.Columns[0].HeaderText = "sexo";
-            //dgv.Columns[0].DataPropertyName = "sexo";
-
-            //dgv.Columns[0].Name = "nascimento";
-            //dgv.Columns[0].HeaderText = "nascimento";
-            //dgv.Columns[0].DataPropertyName = "nascimento";
-
-            //dgv.Columns[0].Name = "fumante";
-            //dgv.Columns[0].HeaderText = "fumante";
-            //dgv.Columns[0].DataPropertyName = "fumante";
-
-            //dgv.Columns[0].Name = "propriedades";
-            //dgv.Columns[0].HeaderText = "propriedades";
-            //dgv.Columns[0].DataPropertyName = "propriedades";
 
             dgv.DataSource = dt;
         }
