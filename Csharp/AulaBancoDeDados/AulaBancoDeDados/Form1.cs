@@ -58,28 +58,6 @@ namespace AulaBancoDeDados
 
 //https://stackoverflow.com/questions/1027360/datagridview-capturing-user-row-selection
             dgv.CellClick += Dgv_CellClick;
-
-            string investiga = "";
-            foreach (var abas in tab.TabPages[2].Controls)
-            {
-                if (abas is GroupBox gbExterno && gbExterno.Text == "Outras informações")
-                {
-                    foreach (var gbInterno in gbExterno.Controls)
-                    {
-                        if (gbInterno is GroupBox cbox && cbox.Text == "Assinale os itens que possui:")
-                        {
-                            foreach (var item in cbox.Controls)
-                            {
-                                if (item is CheckBox cb)
-                                {
-                                    investiga += cb.Text + "\n";
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            MessageBox.Show(investiga);
         }
 
         private void Dgv_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -102,22 +80,34 @@ namespace AulaBancoDeDados
 
             string posses = dt.Rows[0][9].ToString();
             string[] cam = posses.Split('|');
-            //for (int i = 0; i < cam.Length; i++)
-            //{
-            foreach (Control control in tab.TabPages[2].Controls)
+            for (int i = 0; i < cam.Length; i++)
             {
-                //if ()
+                if (cam[i] != "")
+                    SelecionaCheckboxChecked(cam[i]);
             }
-            //}
-            //if (cam[0] == cbAtualizarVeiculos.Text) { cbAtualizarVeiculos.Checked = true; }
-            //if (cam[1] == cbAtualizarGeladeira.Text) { cbAtualizarVeiculos.Checked = true; }
-            //if (cam[2] == cbAtualizarInternet.Text) { cbAtualizarInternet.Checked = true; }
-            //if (cam[3] == cbAtualizarTVassinatura.Text) { cbAtualizarTVassinatura.Checked = true; }
-            //if (cam[4] == cbAtualizarServicoStreaming.Text) { cbAtualizarServicoStreaming.Checked = true; }
-            //if (cam[5] == cbAtualizarComputadorDesktop.Text) { cbAtualizarComputadorDesktop.Checked = true; }
-            //if (cam[6] == cbAtualizarNotebook.Text) { cbAtualizarNotebook.Checked = true; }
-            //if (cam[7] == cbAtualizarCelular.Text) { cbAtualizarCelular.Checked = true; }
-            //if (cam[8] == cbAtualizarTablet.Text) { cbAtualizarTablet.Checked = true; }
+        }
+
+        private void SelecionaCheckboxChecked(string procura)
+        {
+            foreach (var abas in tab.TabPages[2].Controls)
+            {
+                if (abas is GroupBox gbExterno && gbExterno.Tag.ToString() == "oinf") // gbExterno.Text == "Outras informações")
+                {
+                    foreach (var gbInterno in gbExterno.Controls)
+                    {
+                        if (gbInterno is GroupBox cbox && cbox.Tag.ToString() == "prop") // cbox.Text == "Assinale os itens que possui:")
+                        {
+                            foreach (var item in cbox.Controls)
+                            {
+                                if (item is CheckBox cb && cb.Text == procura)
+                                {
+                                    cb.Checked = true;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         private void btnEnviar_Click(object sender, EventArgs e)

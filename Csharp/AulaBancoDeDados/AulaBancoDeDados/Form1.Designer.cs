@@ -805,6 +805,7 @@
             this.gbAtualizarFumante.Size = new System.Drawing.Size(112, 134);
             this.gbAtualizarFumante.TabIndex = 0;
             this.gbAtualizarFumante.TabStop = false;
+            this.gbAtualizarFumante.Tag = "Fum";
             this.gbAtualizarFumante.Text = "Fumante";
             // 
             // rbAtualizarFumanteSim
@@ -851,6 +852,7 @@
             this.gbAtualizarNome.Size = new System.Drawing.Size(904, 194);
             this.gbAtualizarNome.TabIndex = 2;
             this.gbAtualizarNome.TabStop = false;
+            this.gbAtualizarNome.Tag = "dp";
             this.gbAtualizarNome.Text = "Dados pessoais";
             // 
             // mtbAtualizarDataNascimento
