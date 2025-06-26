@@ -682,6 +682,7 @@
             this.gbAtualizarOutrasInformacoes.Size = new System.Drawing.Size(687, 175);
             this.gbAtualizarOutrasInformacoes.TabIndex = 3;
             this.gbAtualizarOutrasInformacoes.TabStop = false;
+            this.gbAtualizarOutrasInformacoes.Tag = "oinf";
             this.gbAtualizarOutrasInformacoes.Text = "Outras informações";
             // 
             // gbAtualizarPropriedades
@@ -701,6 +702,7 @@
             this.gbAtualizarPropriedades.Size = new System.Drawing.Size(543, 133);
             this.gbAtualizarPropriedades.TabIndex = 1;
             this.gbAtualizarPropriedades.TabStop = false;
+            this.gbAtualizarPropriedades.Tag = "prop";
             this.gbAtualizarPropriedades.Text = "Assinale os itens que possui:";
             // 
             // cbAtualizarTablet

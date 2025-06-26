@@ -59,12 +59,27 @@ namespace AulaBancoDeDados
 //https://stackoverflow.com/questions/1027360/datagridview-capturing-user-row-selection
             dgv.CellClick += Dgv_CellClick;
 
-            //MessageBox.Show(tcAtualizar.);
-
-            foreach (Control control in tab.TabPages[2].Controls)
+            string investiga = "";
+            foreach (var abas in tab.TabPages[2].Controls)
             {
-                MessageBox.Show(control.Text);
+                if (abas is GroupBox gbExterno && gbExterno.Text == "Outras informações")
+                {
+                    foreach (var gbInterno in gbExterno.Controls)
+                    {
+                        if (gbInterno is GroupBox cbox && cbox.Text == "Assinale os itens que possui:")
+                        {
+                            foreach (var item in cbox.Controls)
+                            {
+                                if (item is CheckBox cb)
+                                {
+                                    investiga += cb.Text + "\n";
+                                }
+                            }
+                        }
+                    }
+                }
             }
+            MessageBox.Show(investiga);
         }
 
         private void Dgv_CellClick(object sender, DataGridViewCellEventArgs e)
