@@ -89,9 +89,9 @@
             this.cbAtualizarNotebook = new System.Windows.Forms.CheckBox();
             this.cbAtualizarComputadorDesktop = new System.Windows.Forms.CheckBox();
             this.cbAtualizarServicoStreaming = new System.Windows.Forms.CheckBox();
-            this.cbAtualizarTVassinatura = new System.Windows.Forms.CheckBox();
+            this.cbAtualizarTvAssinatura = new System.Windows.Forms.CheckBox();
             this.cbAtualizarGeladeira = new System.Windows.Forms.CheckBox();
-            this.cbAtualizarVeiculos = new System.Windows.Forms.CheckBox();
+            this.cbAtualizarVeiculo = new System.Windows.Forms.CheckBox();
             this.gbAtualizarFumante = new System.Windows.Forms.GroupBox();
             this.rbAtualizarFumanteSim = new System.Windows.Forms.RadioButton();
             this.rbAtualizarFumanteNao = new System.Windows.Forms.RadioButton();
@@ -554,7 +554,7 @@
             // mtbBuscarNascimento
             // 
             this.mtbBuscarNascimento.Location = new System.Drawing.Point(486, 87);
-            this.mtbBuscarNascimento.Mask = "(00) 00000 0000";
+            this.mtbBuscarNascimento.Mask = "00/00/0000";
             this.mtbBuscarNascimento.Name = "mtbBuscarNascimento";
             this.mtbBuscarNascimento.Size = new System.Drawing.Size(194, 30);
             this.mtbBuscarNascimento.TabIndex = 11;
@@ -670,6 +670,7 @@
             this.btnAtualizar.TabIndex = 4;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // gbAtualizarOutrasInformacoes
             // 
@@ -694,9 +695,9 @@
             this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarNotebook);
             this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarComputadorDesktop);
             this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarServicoStreaming);
-            this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarTVassinatura);
+            this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarTvAssinatura);
             this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarGeladeira);
-            this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarVeiculos);
+            this.gbAtualizarPropriedades.Controls.Add(this.cbAtualizarVeiculo);
             this.gbAtualizarPropriedades.Location = new System.Drawing.Point(124, 30);
             this.gbAtualizarPropriedades.Name = "gbAtualizarPropriedades";
             this.gbAtualizarPropriedades.Size = new System.Drawing.Size(543, 133);
@@ -765,15 +766,15 @@
             this.cbAtualizarServicoStreaming.Text = "Serviço de streaming";
             this.cbAtualizarServicoStreaming.UseVisualStyleBackColor = true;
             // 
-            // cbAtualizarTVassinatura
+            // cbAtualizarTvAssinatura
             // 
-            this.cbAtualizarTVassinatura.AutoSize = true;
-            this.cbAtualizarTVassinatura.Location = new System.Drawing.Point(149, 29);
-            this.cbAtualizarTVassinatura.Name = "cbAtualizarTVassinatura";
-            this.cbAtualizarTVassinatura.Size = new System.Drawing.Size(192, 29);
-            this.cbAtualizarTVassinatura.TabIndex = 3;
-            this.cbAtualizarTVassinatura.Text = "TV por assinatura";
-            this.cbAtualizarTVassinatura.UseVisualStyleBackColor = true;
+            this.cbAtualizarTvAssinatura.AutoSize = true;
+            this.cbAtualizarTvAssinatura.Location = new System.Drawing.Point(149, 29);
+            this.cbAtualizarTvAssinatura.Name = "cbAtualizarTvAssinatura";
+            this.cbAtualizarTvAssinatura.Size = new System.Drawing.Size(192, 29);
+            this.cbAtualizarTvAssinatura.TabIndex = 3;
+            this.cbAtualizarTvAssinatura.Text = "TV por assinatura";
+            this.cbAtualizarTvAssinatura.UseVisualStyleBackColor = true;
             // 
             // cbAtualizarGeladeira
             // 
@@ -785,15 +786,15 @@
             this.cbAtualizarGeladeira.Text = "Geladeira";
             this.cbAtualizarGeladeira.UseVisualStyleBackColor = true;
             // 
-            // cbAtualizarVeiculos
+            // cbAtualizarVeiculo
             // 
-            this.cbAtualizarVeiculos.AutoSize = true;
-            this.cbAtualizarVeiculos.Location = new System.Drawing.Point(10, 29);
-            this.cbAtualizarVeiculos.Name = "cbAtualizarVeiculos";
-            this.cbAtualizarVeiculos.Size = new System.Drawing.Size(99, 29);
-            this.cbAtualizarVeiculos.TabIndex = 0;
-            this.cbAtualizarVeiculos.Text = "Veículo";
-            this.cbAtualizarVeiculos.UseVisualStyleBackColor = true;
+            this.cbAtualizarVeiculo.AutoSize = true;
+            this.cbAtualizarVeiculo.Location = new System.Drawing.Point(10, 29);
+            this.cbAtualizarVeiculo.Name = "cbAtualizarVeiculo";
+            this.cbAtualizarVeiculo.Size = new System.Drawing.Size(99, 29);
+            this.cbAtualizarVeiculo.TabIndex = 0;
+            this.cbAtualizarVeiculo.Text = "Veículo";
+            this.cbAtualizarVeiculo.UseVisualStyleBackColor = true;
             // 
             // gbAtualizarFumante
             // 
@@ -1085,9 +1086,9 @@
         private System.Windows.Forms.CheckBox cbAtualizarNotebook;
         private System.Windows.Forms.CheckBox cbAtualizarComputadorDesktop;
         private System.Windows.Forms.CheckBox cbAtualizarServicoStreaming;
-        private System.Windows.Forms.CheckBox cbAtualizarTVassinatura;
+        private System.Windows.Forms.CheckBox cbAtualizarTvAssinatura;
         private System.Windows.Forms.CheckBox cbAtualizarGeladeira;
-        private System.Windows.Forms.CheckBox cbAtualizarVeiculos;
+        private System.Windows.Forms.CheckBox cbAtualizarVeiculo;
         private System.Windows.Forms.GroupBox gbAtualizarFumante;
         private System.Windows.Forms.RadioButton rbAtualizarFumanteSim;
         private System.Windows.Forms.RadioButton rbAtualizarFumanteNao;

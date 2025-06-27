@@ -92,7 +92,7 @@ namespace AulaBancoDeDados
             }
         }
 
-        public DataTable Atualizar(int index)
+        public DataTable RecuperarDadosPeloIndice(int index)
         {
             try
             {
@@ -110,6 +110,49 @@ namespace AulaBancoDeDados
             catch
             {
                 return null;
+            }
+        }
+
+        public bool Atualiza(int id,Pessoa pes)
+        {
+            try
+            {
+                string sql = "UPDATE bd1 set ";
+                sql += "nome = @nome, ";
+                sql += "endereco = @endereco, ";
+                sql += "bairro = @bairro, ";
+                sql += "cidade = @cidade, ";
+                sql += "telefone = @telefone, ";
+                sql += "sexo = @sexo, ";
+                sql += "nascimento = @nascimento, ";
+                sql += "fumante = @fumante, ";
+                string itens = "";
+                foreach (var item in pes.posses)
+                {
+                    itens += item + "|";
+                }
+                sql += "propriedades = @propriedades ";
+                sql += "WHERE id = " + id;
+                
+                MySqlConnection conn = new MySqlConnection(stringConnection);
+                conn.Open();
+                MySqlCommand command = new MySqlCommand(sql, conn);
+                command.Parameters.AddWithValue("@nome", pes.nomeCompleto);
+                command.Parameters.AddWithValue("endereco", pes.endereco);
+                command.Parameters.AddWithValue("@bairro", pes.bairro);
+                command.Parameters.AddWithValue("@cidade", pes.cidade);
+                command.Parameters.AddWithValue("@telefone", pes.telefone);
+                command.Parameters.AddWithValue("@sexo", pes.sexo);
+                command.Parameters.AddWithValue("@nascimento", pes.nascimento);
+                command.Parameters.AddWithValue("@propriedades", itens);
+                command.Parameters.AddWithValue("@fumante", pes.fumante);
+                command.ExecuteNonQuery();
+                conn.Close();
+                return true;
+            }
+            catch
+            {
+                return false;
             }
         }
     }

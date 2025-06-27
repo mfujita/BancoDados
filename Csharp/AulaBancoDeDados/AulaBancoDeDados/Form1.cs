@@ -14,6 +14,8 @@ namespace AulaBancoDeDados
 {
     public partial class Form1: Form
     {
+        int indice = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -62,9 +64,10 @@ namespace AulaBancoDeDados
 
         private void Dgv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int indice = Convert.ToInt32((dgv.SelectedCells[e.RowIndex].Value));
+            //int indice = Convert.ToInt32((dgv.SelectedCells[e.RowIndex].Value));
+            indice = Convert.ToInt32((dgv.SelectedCells[e.RowIndex].Value));
             BancoDados bd = new BancoDados();
-            DataTable dt = bd.Atualizar(indice);
+            DataTable dt = bd.RecuperarDadosPeloIndice(indice);
             
             txtAtualizarNome.Text = dt.Rows[0][1].ToString();
             txtAtualizarEndereco.Text= dt.Rows[0][2].ToString();
@@ -171,6 +174,48 @@ namespace AulaBancoDeDados
             dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
 
             dgv.DataSource = dt;
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            int id = indice;
+            string nome = txtAtualizarNome.Text;
+            string end = txtAtualizarEndereco.Text;
+            string bairro = txtAtualizarBairro.Text;
+            string cidade = txtAtualizarCidade.Text;
+            string telefone = mtbAtualizarTelefone.Text;
+            char sexo = ' ';
+            if (cbAtualizarSexo.Text == "Masculino" || cbAtualizarSexo.Text == "M")
+                sexo = 'M';
+            else
+                sexo = 'F';
+            string nasc = mtbAtualizarDataNascimento.Text;
+            string[] campos = nasc.Split('/');
+            string dia = campos[0];
+            string mes = campos[1];
+            string ano = campos[2];
+            string nascimento = ano + "-" + mes + "-" + dia;
+
+            bool fumante = false;
+            if (rbAtualizarFumanteSim.Checked)
+                fumante = true;
+
+            List<string> posses = new List<string>();
+            if (cbAtualizarVeiculo.Checked) { posses.Add(cbItensVeiculo.Text); }
+            if (cbAtualizarGeladeira.Checked) { posses.Add(cbItensGeladeira.Text); }
+            if (cbAtualizarInternet.Checked) { posses.Add(cbItensInternet.Text); }
+            if (cbAtualizarTvAssinatura.Checked) { posses.Add(cbItensTvAssinatura.Text); }
+            if (cbAtualizarServicoStreaming.Checked) { posses.Add(cbItensServicoStreaming.Text); }
+            if (cbAtualizarComputadorDesktop.Checked) { posses.Add(cbItensComputadorDesktop.Text); }
+            if (cbAtualizarNotebook.Checked) { posses.Add(cbItensNotebook.Text); }
+            if (cbAtualizarCelular.Checked) { posses.Add(cbItensCelular.Text); }
+            if (cbAtualizarTablet.Checked) { posses.Add(cbItensTablet.Text); }
+            Pessoa p = new Pessoa(id, nome, end, bairro, cidade, telefone, sexo, nascimento, fumante, posses);
+            BancoDados bd = new BancoDados();
+            if (bd.Atualiza(indice, p))
+                MessageBox.Show("Registros atualizados com sucesso.");
+            else
+                MessageBox.Show("Erro na atualização dos dados.");
         }
     }
 }
